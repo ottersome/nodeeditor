@@ -22,11 +22,11 @@ public:
 
   QString
   caption() const override
-  { return QStringLiteral("Addition"); }
+  { return QStringLiteral("Additiono"); }
 
   QString
   name() const override
-  { return QStringLiteral("Addition"); }
+  { return QStringLiteral("Additione"); }
 
 private:
 
