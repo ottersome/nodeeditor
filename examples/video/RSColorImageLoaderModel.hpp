@@ -10,6 +10,7 @@
 
 
 #include <librealsense2/rs.hpp>
+#include "RSCameraManager.h"
 
 //Not sure if we need this quite yet
 //Theres a dependency issue or smth like that here
@@ -80,6 +81,7 @@ private:
 
   QPixmap _pixmap;
 
+  CameraManager * _camman = NULL;
 
 private:
   //Helper functions

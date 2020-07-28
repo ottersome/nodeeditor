@@ -10,6 +10,7 @@
 -DQT_GUI_LIB
 -DQT_OPENGL_LIB
 -I/home/ottersome/Projects/ITRI/nodeeditor/build/nodes_autogen/include
+-I/home/ottersome/Projects/ITRI/nodeeditor/nodes
 -I/home/ottersome/Projects/ITRI/nodeeditor/include
 -I/home/ottersome/Projects/ITRI/nodeeditor/src
 -I/home/ottersome/Projects/ITRI/nodeeditor/include/nodes/internal
@@ -22,6 +23,7 @@
 -I/usr/include/qt/QtGui
 -I/usr/include/qt/
 -I/usr/include/qt/QtOpenGL
+-I/home/ottersome/Projects/ITRI/nodeeditor/nodes
 --no-notes
 -o
 /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Serializable.cpp

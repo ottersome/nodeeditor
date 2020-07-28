@@ -1,3 +1,4 @@
+# For tests
 if(BUILD_TESTING)
   find_package(Catch2 2.3.0 QUIET)
 

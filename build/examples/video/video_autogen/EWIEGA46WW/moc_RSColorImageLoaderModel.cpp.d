@@ -1,6 +1,7 @@
 /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video/video_autogen/EWIEGA46WW/moc_RSColorImageLoaderModel.cpp: /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSColorImageLoaderModel.hpp \
   /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video/video_autogen/moc_predefs.h \
   /home/ottersome/Projects/ITRI/nodeeditor/examples/video/PixmapData.hpp \
+  /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSCameraManager.h \
   /home/ottersome/Projects/ITRI/nodeeditor/include/nodes/DataModelRegistry \
   /home/ottersome/Projects/ITRI/nodeeditor/include/nodes/NodeDataModel \
   /home/ottersome/Projects/ITRI/nodeeditor/include/nodes/internal/Compiler.hpp \
@@ -181,6 +182,7 @@
   /usr/include/c++/10.1.0/ext/string_conversions.h \
   /usr/include/c++/10.1.0/ext/type_traits.h \
   /usr/include/c++/10.1.0/functional \
+  /usr/include/c++/10.1.0/future \
   /usr/include/c++/10.1.0/initializer_list \
   /usr/include/c++/10.1.0/ios \
   /usr/include/c++/10.1.0/iosfwd \
@@ -255,6 +257,7 @@
   /usr/include/qt/QtCore/QPointF \
   /usr/include/qt/QtCore/QRectF \
   /usr/include/qt/QtCore/QString \
+  /usr/include/qt/QtCore/QThread \
   /usr/include/qt/QtCore/QUuid \
   /usr/include/qt/QtCore/QtGlobal \
   /usr/include/qt/QtCore/qalgorithms.h \
@@ -274,7 +277,9 @@
   /usr/include/qt/QtCore/qcontiguouscache.h \
   /usr/include/qt/QtCore/qdatastream.h \
   /usr/include/qt/QtCore/qdatetime.h \
+  /usr/include/qt/QtCore/qdeadlinetimer.h \
   /usr/include/qt/QtCore/qdebug.h \
+  /usr/include/qt/QtCore/qelapsedtimer.h \
   /usr/include/qt/QtCore/qflags.h \
   /usr/include/qt/QtCore/qgenericatomic.h \
   /usr/include/qt/QtCore/qglobal.h \
@@ -321,6 +326,7 @@
   /usr/include/qt/QtCore/qsystemdetection.h \
   /usr/include/qt/QtCore/qtcore-config.h \
   /usr/include/qt/QtCore/qtextstream.h \
+  /usr/include/qt/QtCore/qthread.h \
   /usr/include/qt/QtCore/qtypeinfo.h \
   /usr/include/qt/QtCore/qurl.h \
   /usr/include/qt/QtCore/quuid.h \
@@ -330,6 +336,7 @@
   /usr/include/qt/QtCore/qversiontagging.h \
   /usr/include/qt/QtGui/QColor \
   /usr/include/qt/QtGui/QFontMetrics \
+  /usr/include/qt/QtGui/QImage \
   /usr/include/qt/QtGui/QPainter \
   /usr/include/qt/QtGui/QPixmap \
   /usr/include/qt/QtGui/QTransform \

@@ -426,6 +426,7 @@ examples/video/CMakeFiles/video.dir/main.cpp.o: ../include/nodes/internal/TypeCo
 examples/video/CMakeFiles/video.dir/main.cpp.o: ../include/nodes/internal/memory.hpp
 examples/video/CMakeFiles/video.dir/main.cpp.o: ../examples/video/ImageShowModel.hpp
 examples/video/CMakeFiles/video.dir/main.cpp.o: ../examples/video/PixmapData.hpp
+examples/video/CMakeFiles/video.dir/main.cpp.o: ../examples/video/RSCameraManager.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: ../examples/video/RSColorImageLoaderModel.hpp
 examples/video/CMakeFiles/video.dir/main.cpp.o: ../examples/video/main.cpp
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/QJsonObject
@@ -433,6 +434,7 @@ examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/QObject
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/QPointF
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/QRectF
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/QString
+examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/QThread
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/QUuid
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/QVariant
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/QtGlobal
@@ -458,7 +460,9 @@ examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qcoreappl
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qcoreevent.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qdatastream.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qdatetime.h
+examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qdeadlinetimer.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qdebug.h
+examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qelapsedtimer.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qeventloop.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qfile.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qfiledevice.h
@@ -510,6 +514,7 @@ examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qsysinfo.
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qsystemdetection.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qtcore-config.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qtextstream.h
+examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qthread.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qtypeinfo.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qurl.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qurlquery.h
@@ -520,6 +525,7 @@ examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qvector.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtCore/qversiontagging.h
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtGui/QColor
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtGui/QFontMetrics
+examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtGui/QImage
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtGui/QPainter
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtGui/QPixmap
 examples/video/CMakeFiles/video.dir/main.cpp.o: /usr/include/qt/QtGui/QTransform

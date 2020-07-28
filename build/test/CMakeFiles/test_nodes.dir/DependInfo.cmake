@@ -28,6 +28,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "test/test_nodes_autogen/include"
+  "../nodes"
   "../test/../src"
   "../test/../include/internal"
   "../test/include"

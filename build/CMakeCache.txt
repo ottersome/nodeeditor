@@ -264,6 +264,9 @@ Qt5Gui_DIR:PATH=/usr/lib64/cmake/Qt5Gui
 //The directory containing a CMake configuration file for Qt5OpenGL.
 Qt5OpenGL_DIR:PATH=/usr/lib64/cmake/Qt5OpenGL
 
+//The directory containing a CMake configuration file for Qt5RealSense.
+Qt5RealSense_DIR:PATH=Qt5RealSense_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for Qt5Test.
 Qt5Test_DIR:PATH=/usr/lib64/cmake/Qt5Test
 
@@ -273,8 +276,17 @@ Qt5Widgets_DIR:PATH=/usr/lib64/cmake/Qt5Widgets
 //The directory containing a CMake configuration file for Qt5.
 Qt5_DIR:PATH=/usr/lib64/cmake/Qt5
 
+//Path to a library.
+REALSENSE2_FOUND:FILEPATH=/usr/lib/librealsense2.so
+
+//The directory containing a CMake configuration file for RealSense.
+RealSense_DIR:PATH=RealSense_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for librealsense.
+librealsense_DIR:PATH=librealsense_DIR-NOTFOUND
+
 //Dependencies for the target
-nodes_LIB_DEPENDS:STATIC=general;Qt5::Core;general;Qt5::Widgets;general;Qt5::Gui;general;Qt5::OpenGL;
+nodes_LIB_DEPENDS:STATIC=general;Qt5::Core;general;Qt5::Widgets;general;Qt5::Gui;general;Qt5::OpenGL;general;/usr/lib/librealsense2.so;
 
 
 ########################

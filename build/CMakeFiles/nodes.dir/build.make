@@ -949,6 +949,7 @@ lib/libnodes.so: CMakeFiles/nodes.dir/include/nodes/internal/moc_TypeConverter.c
 lib/libnodes.so: CMakeFiles/nodes.dir/include/nodes/internal/moc_memory.cpp.o
 lib/libnodes.so: CMakeFiles/nodes.dir/build.make
 lib/libnodes.so: /usr/lib/libQt5OpenGL.so.5.15.0
+lib/libnodes.so: /usr/lib/librealsense2.so
 lib/libnodes.so: /usr/lib/libQt5Widgets.so.5.15.0
 lib/libnodes.so: /usr/lib/libQt5Gui.so.5.15.0
 lib/libnodes.so: /usr/lib/libQt5Core.so.5.15.0

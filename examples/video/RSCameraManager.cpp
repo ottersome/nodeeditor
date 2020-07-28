@@ -8,6 +8,7 @@ CameraManager::CameraManager(
         unsigned int depth_height,
         unsigned int fps
         ){
+    printf("Initializing Camera...\n");
     //TODO do configuration for depth later 
     //Set up the camera
     _config.enable_stream(RS2_STREAM_COLOR,
@@ -22,16 +23,23 @@ CameraManager::CameraManager(
     {
         //Wait for all configured streams to produce a frame
         _frameset = _pipeline.wait_for_frames();
+        //printf("Got frame.\n");
     }
     //Done with the initialization
+    camera_running = true;
+    printf("Camera Initialized.\n");
 }
 
 void CameraManager::run(){
-    _frameset = _pipeline.wait_for_frames();
-    rs2::frame rgb_frame = _frameset.get_color_frame();
-    auto q_rgb = rsFrameToQImage(rgb_frame);
+    while(camera_running){
+        //This right here is causing the error
+        _frameset = _pipeline.wait_for_frames();
+        //printf("Frame obtained\n");
+        rs2::frame rgb_frame = _frameset.get_color_frame();
+        auto q_rgb = rsFrameToQImage(rgb_frame);
 
-    emit framesReady(q_rgb);
+        emit framesReady(q_rgb);
+    }
 }
 //Our special function that voids the need of opencv2
 QImage CameraManager::rsFrameToQImage(const rs2::frame &f){
@@ -45,9 +53,11 @@ QImage CameraManager::rsFrameToQImage(const rs2::frame &f){
     if(f.get_profile().format() == RS2_FORMAT_RGB8){
         auto r = QImage((uchar*) f.get_data(),
                 w, h, w*3,QImage::Format_RGB888);
+        return r;
     }else if(f.get_profile().format() == RS2_FORMAT_Z16){
         auto r = QImage((uchar*)f.get_data(), w,h,w*2,
                 QImage::Format_Grayscale16);
+        return r;
     }
     throw std::runtime_error("Frame format not yet supported");
 

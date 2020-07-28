@@ -148,6 +148,7 @@ bin/images: /usr/lib/libQt5OpenGL.so.5.15.0
 bin/images: /usr/lib/libQt5Widgets.so.5.15.0
 bin/images: /usr/lib/libQt5Gui.so.5.15.0
 bin/images: /usr/lib/libQt5Core.so.5.15.0
+bin/images: /usr/lib/librealsense2.so
 bin/images: examples/images/CMakeFiles/images.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../bin/images"
 	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/images && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/images.dir/link.txt --verbose=$(VERBOSE)

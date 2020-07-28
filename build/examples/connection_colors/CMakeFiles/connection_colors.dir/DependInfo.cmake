@@ -23,6 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "examples/connection_colors/connection_colors_autogen/include"
+  "../nodes"
   "../include"
   "/usr/include/qt"
   "/usr/include/qt/QtCore"

@@ -7,7 +7,6 @@
 #include <memory>
 #include <stdexcept>
 
-#include "RSCameraManager.h"
 
 RSColorImageLoaderModel::
 RSColorImageLoaderModel()
@@ -29,8 +28,6 @@ RSColorImageLoaderModel()
     //TODO: Might want to create a thread for this here
     //  since the function may block for a bit and make
     //  the program unresponsive
-    CameraManager camman(200,200,200,200,30);
-    camman.start();
 }
 
 //TODO delete this function from this file and from 
@@ -72,21 +69,24 @@ eventFilter(QObject *object, QEvent *event)
 
     if (event->type() == QEvent::MouseButtonPress)
     {
+        _camman = new CameraManager(640,480,640,480,30);
+        QObject::connect(_camman, &CameraManager::framesReady, this, &RSColorImageLoaderModel::receiveFrame);
+        _camman->start();
 
-      QString fileName =
-        QFileDialog::getOpenFileName(nullptr,
-                                     tr("Open Image"),
-                                     QDir::homePath(),
-                                     tr("Image Files (*.png *.jpg *.bmp)"));
+      //QString fileName =
+        //QFileDialog::getOpenFileName(nullptr,
+                                     //tr("Open Image"),
+                                     //QDir::homePath(),
+                                     //tr("Image Files (*.png *.jpg *.bmp)"));
 
-      //Create new pixmap for some reason
-      _pixmap = QPixmap(fileName);
+      ////Create new pixmap for some reason
+      //_pixmap = QPixmap(fileName);
 
-      //Set the image to the  QT Label
-      _label->setPixmap(_pixmap.scaled(w, h, Qt::KeepAspectRatio));
+      ////Set the image to the  QT Label
+      //_label->setPixmap(_pixmap.scaled(w, h, Qt::KeepAspectRatio));
 
-      //Emit Signal
-      Q_EMIT dataUpdated(0);
+      ////Emit Signal
+      //Q_EMIT dataUpdated(0);
 
       return true;
     }

@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.2)
 # version 3.4 is required as other do not work with C++14 and clang
 
+#Set Project name
 project(NodeEditor CXX)
 
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
@@ -32,6 +33,7 @@ if(NE_DEVELOPER_DEFAULTS)
   set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/lib")
 endif()
 
+# Process CMakeFiles here before continuing execution
 add_subdirectory(external)
 
 # Find the QtWidgets library
@@ -42,6 +44,44 @@ find_package(Qt5 5.3 COMPONENTS
              OpenGL)
 
 qt5_add_resources(RESOURCES ./resources/resources.qrc)
+
+
+# LUIS: Adding realsense
+# Simple non robust way to find the librealsense library
+if(WIN32)
+    if("${CMAKE_SIZEOF_VOID_P}" STREQUAL "8")
+        set(LIBRARY_DIR "C:\\Program Files (x86)\\Intel RealSense SDK 2.0\\lib\\x64")          # TODO: Update this variable to correct path - folder where realsense2.lib is found
+        set(DLL_DIR "C:\\Program Files (x86)\\Intel RealSense SDK 2.0\\bin\\x64")              # TODO: Update this variable to correct path - folder where realsense2.dll is found
+    else()
+        set(LIBRARY_DIR "C:\\Program Files (x86)\\Intel RealSense SDK 2.0\\lib\\x86")          # TODO: Update this variable to correct path - folder where realsense2.lib is found
+        set(DLL_DIR "C:\\Program Files (x86)\\Intel RealSense SDK 2.0\\bin\\x86")              # TODO: Update this variable to correct path - folder where realsense2.dll is found
+    endif()
+    set(PROJECT_BINARY_OUTPUT_PATH "${PROJECT_BINARY_DIR}/\$\(Configuration\)")                # TODO: Update this variable to correct path - folder to which your project will compile
+    set(ADDITIONAL_INCLUDE_DIRS "C:\\Program Files (x86)\\Intel RealSense SDK 2.0\\include")   # TODO: Update this variable to correct path - folder where librealsense2 folder is found
+endif()
+
+
+find_library(REALSENSE2_FOUND realsense2 HINTS ${LIBRARY_DIR} REQUIRED)
+if(NOT REALSENSE2_FOUND)
+    SET(REALSENSE2_FOUND "realsense2")
+    message(WARN "Failed to find_library(realsense2)")
+endif()
+# getting-started
+include_directories(nodes ${ADDITIONAL_INCLUDE_DIRS})
+
+# Post Build script to copy realsense2.dll
+if(WIN32)
+message(STATUS "Adding Post build script to copy realsense2.dll to project's binary folder")
+message(STATUS "Will try to copy from ${DLL_DIR} to ${PROJECT_BINARY_OUTPUT_PATH}")
+add_custom_command(TARGET nodes POST_BUILD        # Adds a post-build event to rs-getting-started
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different              # which executes "cmake - E copy_if_different..."
+        "${DLL_DIR}/realsense2.dll"                            # <--this is in-file
+        ${PROJECT_BINARY_OUTPUT_PATH})                 # <--this is out-file path
+endif()
+if(REALSENSE2_FOUND)
+    message(STATUS "Found RealSense Library")
+endif()
+# LUIS: Finished Adding realsense
 
 # Unfortunately, as we have a split include/src, AUTOMOC doesn't work.
 # We'll have to manually specify some files
@@ -94,6 +134,7 @@ target_link_libraries(nodes
     Qt5::Widgets
     Qt5::Gui
     Qt5::OpenGL
+    ${REALSENSE2_FOUND}
 )
 
 target_compile_definitions(nodes
@@ -123,6 +164,7 @@ set_target_properties(nodes
     ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
     LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+    FOLDER Examples
 )
 
 ######

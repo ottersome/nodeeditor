@@ -31,6 +31,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/home/ottersome/Projects/ITRI/nodeeditor/nodes",
 		"/home/ottersome/Projects/ITRI/nodeeditor/src",
 		"/home/ottersome/Projects/ITRI/nodeeditor/include/internal",
 		"/home/ottersome/Projects/ITRI/nodeeditor/test/include",

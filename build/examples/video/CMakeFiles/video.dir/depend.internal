@@ -427,6 +427,7 @@ examples/video/CMakeFiles/video.dir/main.cpp.o
  ../include/nodes/internal/memory.hpp
  /home/ottersome/Projects/ITRI/nodeeditor/examples/video/ImageShowModel.hpp
  /home/ottersome/Projects/ITRI/nodeeditor/examples/video/PixmapData.hpp
+ /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSCameraManager.h
  /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSColorImageLoaderModel.hpp
  /home/ottersome/Projects/ITRI/nodeeditor/examples/video/main.cpp
  /usr/include/qt/QtCore/QJsonObject
@@ -434,6 +435,7 @@ examples/video/CMakeFiles/video.dir/main.cpp.o
  /usr/include/qt/QtCore/QPointF
  /usr/include/qt/QtCore/QRectF
  /usr/include/qt/QtCore/QString
+ /usr/include/qt/QtCore/QThread
  /usr/include/qt/QtCore/QUuid
  /usr/include/qt/QtCore/QVariant
  /usr/include/qt/QtCore/QtGlobal
@@ -459,7 +461,9 @@ examples/video/CMakeFiles/video.dir/main.cpp.o
  /usr/include/qt/QtCore/qcoreevent.h
  /usr/include/qt/QtCore/qdatastream.h
  /usr/include/qt/QtCore/qdatetime.h
+ /usr/include/qt/QtCore/qdeadlinetimer.h
  /usr/include/qt/QtCore/qdebug.h
+ /usr/include/qt/QtCore/qelapsedtimer.h
  /usr/include/qt/QtCore/qeventloop.h
  /usr/include/qt/QtCore/qfile.h
  /usr/include/qt/QtCore/qfiledevice.h
@@ -511,6 +515,7 @@ examples/video/CMakeFiles/video.dir/main.cpp.o
  /usr/include/qt/QtCore/qsystemdetection.h
  /usr/include/qt/QtCore/qtcore-config.h
  /usr/include/qt/QtCore/qtextstream.h
+ /usr/include/qt/QtCore/qthread.h
  /usr/include/qt/QtCore/qtypeinfo.h
  /usr/include/qt/QtCore/qurl.h
  /usr/include/qt/QtCore/qurlquery.h
@@ -521,6 +526,7 @@ examples/video/CMakeFiles/video.dir/main.cpp.o
  /usr/include/qt/QtCore/qversiontagging.h
  /usr/include/qt/QtGui/QColor
  /usr/include/qt/QtGui/QFontMetrics
+ /usr/include/qt/QtGui/QImage
  /usr/include/qt/QtGui/QPainter
  /usr/include/qt/QtGui/QPixmap
  /usr/include/qt/QtGui/QTransform

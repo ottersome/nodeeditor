@@ -178,6 +178,7 @@ bin/test_nodes: /usr/lib/libQt5Test.so.5.15.0
 bin/test_nodes: /usr/lib/libQt5OpenGL.so.5.15.0
 bin/test_nodes: /usr/lib/libQt5Widgets.so.5.15.0
 bin/test_nodes: /usr/lib/libQt5Gui.so.5.15.0
+bin/test_nodes: /usr/lib/librealsense2.so
 bin/test_nodes: /usr/lib/libQt5Core.so.5.15.0
 bin/test_nodes: test/CMakeFiles/test_nodes.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ../bin/test_nodes"

@@ -46,6 +46,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"/home/ottersome/Projects/ITRI/nodeeditor/nodes",
 		"/home/ottersome/Projects/ITRI/nodeeditor/include",
 		"/usr/include/qt",
 		"/usr/include/qt/QtCore",
