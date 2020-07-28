@@ -146,31 +146,15 @@ memory
 utility
 -
 
-/home/ottersome/Projects/ITRI/nodeeditor/build/examples/images/images_autogen/EWIEGA46WW/moc_ImageLoaderModel.cpp
-memory
--
-../../../../../examples/images/ImageLoaderModel.hpp
+/home/ottersome/Projects/ITRI/nodeeditor/examples/images/ImageLoaderModel.cpp
+ImageLoaderModel.hpp
 /home/ottersome/Projects/ITRI/nodeeditor/examples/images/ImageLoaderModel.hpp
-QtCore/qbytearray.h
+QtCore/QEvent
 -
-QtCore/qmetatype.h
+QtCore/QDir
 -
-
-/home/ottersome/Projects/ITRI/nodeeditor/build/examples/images/images_autogen/EWIEGA46WW/moc_ImageShowModel.cpp
-memory
+QtWidgets/QFileDialog
 -
-../../../../../examples/images/ImageShowModel.hpp
-/home/ottersome/Projects/ITRI/nodeeditor/examples/images/ImageShowModel.hpp
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
-/home/ottersome/Projects/ITRI/nodeeditor/build/examples/images/images_autogen/mocs_compilation.cpp
-EWIEGA46WW/moc_ImageLoaderModel.cpp
-/home/ottersome/Projects/ITRI/nodeeditor/build/examples/images/images_autogen/EWIEGA46WW/moc_ImageLoaderModel.cpp
-EWIEGA46WW/moc_ImageShowModel.cpp
-/home/ottersome/Projects/ITRI/nodeeditor/build/examples/images/images_autogen/EWIEGA46WW/moc_ImageShowModel.cpp
 
 /home/ottersome/Projects/ITRI/nodeeditor/examples/images/ImageLoaderModel.hpp
 iostream
@@ -186,23 +170,19 @@ nodes/NodeDataModel
 PixmapData.hpp
 /home/ottersome/Projects/ITRI/nodeeditor/examples/images/PixmapData.hpp
 
-/home/ottersome/Projects/ITRI/nodeeditor/examples/images/ImageShowModel.hpp
-iostream
--
-QtCore/QObject
--
-QtWidgets/QLabel
--
-nodes/DataModelRegistry
--
-nodes/NodeDataModel
--
-
 /home/ottersome/Projects/ITRI/nodeeditor/examples/images/PixmapData.hpp
 QtGui/QPixmap
 -
 nodes/NodeDataModel
 -
+
+/usr/include/qt/QtCore/QDir
+qdir.h
+/usr/include/qt/QtCore/qdir.h
+
+/usr/include/qt/QtCore/QEvent
+qcoreevent.h
+/usr/include/qt/QtCore/qcoreevent.h
 
 /usr/include/qt/QtCore/QJsonObject
 qjsonobject.h
@@ -424,6 +404,16 @@ map
 utility
 -
 
+/usr/include/qt/QtCore/qdir.h
+QtCore/qstring.h
+-
+QtCore/qfileinfo.h
+-
+QtCore/qstringlist.h
+-
+QtCore/qshareddata.h
+-
+
 /usr/include/qt/QtCore/qfile.h
 QtCore/qfiledevice.h
 -
@@ -436,6 +426,16 @@ stdio.h
 QtCore/qiodevice.h
 -
 QtCore/qstring.h
+-
+
+/usr/include/qt/QtCore/qfileinfo.h
+QtCore/qfile.h
+-
+QtCore/qlist.h
+-
+QtCore/qshareddata.h
+-
+QtCore/qmetatype.h
 -
 
 /usr/include/qt/QtCore/qflags.h
@@ -1382,6 +1382,10 @@ QtGui/qwindowdefs_win.h
 QtGui/qtguiglobal.h
 -
 
+/usr/include/qt/QtWidgets/QFileDialog
+qfiledialog.h
+/usr/include/qt/QtWidgets/qfiledialog.h
+
 /usr/include/qt/QtWidgets/QLabel
 qlabel.h
 /usr/include/qt/QtWidgets/qlabel.h
@@ -1389,6 +1393,26 @@ qlabel.h
 /usr/include/qt/QtWidgets/QWidget
 qwidget.h
 /usr/include/qt/QtWidgets/qwidget.h
+
+/usr/include/qt/QtWidgets/qdialog.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+
+/usr/include/qt/QtWidgets/qfiledialog.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtCore/qdir.h
+-
+QtCore/qstring.h
+-
+QtCore/qurl.h
+-
+QtWidgets/qdialog.h
+-
+functional
+-
 
 /usr/include/qt/QtWidgets/qframe.h
 QtWidgets/qtwidgetsglobal.h

@@ -4,25 +4,34 @@
 #include <QtCore/QDir>
 
 #include <QtWidgets/QFileDialog>
+#include <QComboBox>
 #include <memory>
+#include <qnamespace.h>
 #include <stdexcept>
-
 
 RSColorImageLoaderModel::
 RSColorImageLoaderModel()
-  : _label(new QLabel("Double click to load image"))
+  : //_label(new QLabel("Double click to load image",&_parentWidget,Qt::WindowFlags())),
+  _cbCameraList(new QComboBox(&_parentWidget))
 {
-    _label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
+    printf("New Rs image loader\n");
+    //Label Settings(Might erase them later tbh)
+    //_label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
+    //QFont f = _label->font();
+    //f.setBold(true);
+    //f.setItalic(true);
+    //_label->setFont(f);
+    //_label->setFixedSize(200, 200);
+    //_label->installEventFilter(this);
 
-    QFont f = _label->font();
-    f.setBold(true);
-    f.setItalic(true);
+    //Create Timer Label
+    _cbCameraList->addItem(QString("No camera connected."));
+    _cbCameraList->setDisabled(true);
+    //We might want to create a thread to populate this combobox as we
+    //connect and disconnect devices.
+    //...or maybe just a refresh button. either or, not now
+    _cbCameraList->installEventFilter(this);
 
-    _label->setFont(f);
-
-    _label->setFixedSize(200, 200);
-
-    _label->installEventFilter(this);
 
     //Start Real Sense Pipeline to later pull Images
     //TODO: Might want to create a thread for this here
@@ -69,9 +78,6 @@ eventFilter(QObject *object, QEvent *event)
 
     if (event->type() == QEvent::MouseButtonPress)
     {
-        _camman = new CameraManager(640,480,640,480,30);
-        QObject::connect(_camman, &CameraManager::framesReady, this, &RSColorImageLoaderModel::receiveFrame);
-        _camman->start();
 
       //QString fileName =
         //QFileDialog::getOpenFileName(nullptr,
@@ -95,6 +101,14 @@ eventFilter(QObject *object, QEvent *event)
       if (!_pixmap.isNull())
         _label->setPixmap(_pixmap.scaled(w, h, Qt::KeepAspectRatio));
     }
+  }else if(object == _cbCameraList){
+      if (event->type() == QEvent::MouseButtonPress)
+      {
+          _camman = new CameraManager(640,480,640,480,30);
+          QObject::connect(_camman, &CameraManager::framesReady, this, &RSColorImageLoaderModel::receiveFrame);
+          _camman->start();
+
+      }
   }
 
   return false;
@@ -102,6 +116,7 @@ eventFilter(QObject *object, QEvent *event)
 void RSColorImageLoaderModel::setInData(std::shared_ptr<NodeData> nodedata, int port) {
     //LUIS: IN this case the data will simply be an event indicating that 
     //we can run again our ucode
+    printf("Setting in data\n");
 
 }
 
@@ -123,5 +138,8 @@ outData(PortIndex)
 void RSColorImageLoaderModel::receiveFrame(QImage rgb_image){
     //Now that we have received a new frame we must update the 
     //label
-    _label->setPixmap(QPixmap::fromImage(rgb_image));
+    //_label->setPixmap(QPixmap::fromImage(rgb_image));
+    _pixmap = QPixmap::fromImage(rgb_image);
+    Q_EMIT dataUpdated(0);
+
 }

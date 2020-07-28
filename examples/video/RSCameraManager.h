@@ -29,9 +29,14 @@ private:
 
 
 signals:
+        //Will fire when we can get a frame
         void framesReady(QImage frameRGB);
+        //Will fire when we find out that 
+        //either a camera was conneted or disconneted
+        void changeInCameras(QList<QString>);
 
 private:
         QImage rsFrameToQImage(const rs2::frame & f);
+        bool changeInCameras();
 
 };

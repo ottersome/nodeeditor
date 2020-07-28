@@ -267,6 +267,7 @@
  mdp:/usr/include/qt/QtCore/QThread
  mdp:/usr/include/qt/QtCore/QUuid
  mdp:/usr/include/qt/QtCore/QtGlobal
+ mdp:/usr/include/qt/QtCore/qabstractitemmodel.h
  mdp:/usr/include/qt/QtCore/qalgorithms.h
  mdp:/usr/include/qt/QtCore/qarraydata.h
  mdp:/usr/include/qt/QtCore/qatomic.h
@@ -353,6 +354,7 @@
  mdp:/usr/include/qt/QtGui/qfont.h
  mdp:/usr/include/qt/QtGui/qfontinfo.h
  mdp:/usr/include/qt/QtGui/qfontmetrics.h
+ mdp:/usr/include/qt/QtGui/qicon.h
  mdp:/usr/include/qt/QtGui/qimage.h
  mdp:/usr/include/qt/QtGui/qkeysequence.h
  mdp:/usr/include/qt/QtGui/qmatrix.h
@@ -370,12 +372,23 @@
  mdp:/usr/include/qt/QtGui/qtgui-config.h
  mdp:/usr/include/qt/QtGui/qtguiglobal.h
  mdp:/usr/include/qt/QtGui/qtransform.h
+ mdp:/usr/include/qt/QtGui/qvalidator.h
  mdp:/usr/include/qt/QtGui/qwindowdefs.h
  mdp:/usr/include/qt/QtWidgets/QLabel
  mdp:/usr/include/qt/QtWidgets/QWidget
+ mdp:/usr/include/qt/QtWidgets/qabstractitemdelegate.h
+ mdp:/usr/include/qt/QtWidgets/qabstractslider.h
+ mdp:/usr/include/qt/QtWidgets/qabstractspinbox.h
+ mdp:/usr/include/qt/QtWidgets/qcombobox.h
  mdp:/usr/include/qt/QtWidgets/qframe.h
  mdp:/usr/include/qt/QtWidgets/qlabel.h
+ mdp:/usr/include/qt/QtWidgets/qrubberband.h
  mdp:/usr/include/qt/QtWidgets/qsizepolicy.h
+ mdp:/usr/include/qt/QtWidgets/qslider.h
+ mdp:/usr/include/qt/QtWidgets/qstyle.h
+ mdp:/usr/include/qt/QtWidgets/qstyleoption.h
+ mdp:/usr/include/qt/QtWidgets/qtabbar.h
+ mdp:/usr/include/qt/QtWidgets/qtabwidget.h
  mdp:/usr/include/qt/QtWidgets/qtwidgets-config.h
  mdp:/usr/include/qt/QtWidgets/qtwidgetsglobal.h
  mdp:/usr/include/qt/QtWidgets/qwidget.h

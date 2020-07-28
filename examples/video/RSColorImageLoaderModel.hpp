@@ -10,6 +10,7 @@
 
 
 #include <librealsense2/rs.hpp>
+#include <qcombobox.h>
 #include "RSCameraManager.h"
 
 //Not sure if we need this quite yet
@@ -42,7 +43,6 @@ public:
   QString
   caption() const override
   { return QString("Image Source"); }
-
   QString
   name() const override { return QString("RSColorImageLoaderModel"); }
 
@@ -64,8 +64,10 @@ public:
   void
   setInData(std::shared_ptr<NodeData>, int) override;
 
+  //LUIS:  Changing this from label to widget to fit more 
+  //child widgets
   QWidget *
-  embeddedWidget() override { return _label; }
+  embeddedWidget() override { return & _parentWidget; }
 
   bool
   resizable() const override { return true; }
@@ -77,7 +79,11 @@ protected:
 
 private:
 
+  //Will encapsualte everything.
+  QWidget  _parentWidget;
+
   QLabel * _label;
+  QComboBox  * _cbCameraList;
 
   QPixmap _pixmap;
 

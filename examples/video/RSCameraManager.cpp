@@ -32,6 +32,11 @@ CameraManager::CameraManager(
 
 void CameraManager::run(){
     while(camera_running){
+        //Before polling for the frame make sure to update
+        //cameras availability
+
+
+
         //This right here is causing the error
         _frameset = _pipeline.wait_for_frames();
         //printf("Frame obtained\n");

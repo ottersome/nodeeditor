@@ -9,6 +9,7 @@ ImageLoaderModel::
 ImageLoaderModel()
   : _label(new QLabel("Double click to load image"))
 {
+    printf("New Image Loader\n");
   _label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
 
   QFont f = _label->font();
@@ -44,7 +45,6 @@ nPorts(PortType portType) const
 
   return result;
 }
-
 
 bool
 ImageLoaderModel::
