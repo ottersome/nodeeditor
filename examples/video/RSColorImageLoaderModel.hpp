@@ -4,6 +4,8 @@
 
 #include <QtCore/QObject>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
 
 #include <nodes/DataModelRegistry>
 #include <nodes/NodeDataModel>
@@ -82,8 +84,11 @@ private:
   //Will encapsualte everything.
   QWidget  _parentWidget;
 
+  QVBoxLayout * _layout;
+
   QLabel * _label;
   QComboBox  * _cbCameraList;
+  QPushButton  * _b_refreshList;
 
   QPixmap _pixmap;
 
@@ -95,6 +100,5 @@ private:
 
 private slots:
   void receiveFrame(QImage rgb_image);
-
-
+  void changeCamera(int index);
 };

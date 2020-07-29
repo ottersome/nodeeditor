@@ -223,6 +223,7 @@
   /usr/include/librealsense2/rs.hpp \
   /usr/include/locale.h \
   /usr/include/pthread.h \
+  /usr/include/qt/QtCore/QReadWriteLock \
   /usr/include/qt/QtCore/QThread \
   /usr/include/qt/QtCore/qalgorithms.h \
   /usr/include/qt/QtCore/qarraydata.h \
@@ -260,6 +261,7 @@
   /usr/include/qt/QtCore/qpair.h \
   /usr/include/qt/QtCore/qpoint.h \
   /usr/include/qt/QtCore/qprocessordetection.h \
+  /usr/include/qt/QtCore/qreadwritelock.h \
   /usr/include/qt/QtCore/qrect.h \
   /usr/include/qt/QtCore/qrefcount.h \
   /usr/include/qt/QtCore/qregexp.h \

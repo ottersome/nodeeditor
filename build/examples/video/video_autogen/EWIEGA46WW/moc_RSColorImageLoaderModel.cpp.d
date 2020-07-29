@@ -255,6 +255,7 @@
   /usr/include/qt/QtCore/QJsonObject \
   /usr/include/qt/QtCore/QObject \
   /usr/include/qt/QtCore/QPointF \
+  /usr/include/qt/QtCore/QReadWriteLock \
   /usr/include/qt/QtCore/QRectF \
   /usr/include/qt/QtCore/QString \
   /usr/include/qt/QtCore/QThread \
@@ -307,6 +308,7 @@
   /usr/include/qt/QtCore/qpair.h \
   /usr/include/qt/QtCore/qpoint.h \
   /usr/include/qt/QtCore/qprocessordetection.h \
+  /usr/include/qt/QtCore/qreadwritelock.h \
   /usr/include/qt/QtCore/qrect.h \
   /usr/include/qt/QtCore/qrefcount.h \
   /usr/include/qt/QtCore/qregexp.h \
@@ -368,13 +370,21 @@
   /usr/include/qt/QtGui/qvalidator.h \
   /usr/include/qt/QtGui/qwindowdefs.h \
   /usr/include/qt/QtWidgets/QLabel \
+  /usr/include/qt/QtWidgets/QPushButton \
+  /usr/include/qt/QtWidgets/QVBoxLayout \
   /usr/include/qt/QtWidgets/QWidget \
+  /usr/include/qt/QtWidgets/qabstractbutton.h \
   /usr/include/qt/QtWidgets/qabstractitemdelegate.h \
   /usr/include/qt/QtWidgets/qabstractslider.h \
   /usr/include/qt/QtWidgets/qabstractspinbox.h \
+  /usr/include/qt/QtWidgets/qboxlayout.h \
   /usr/include/qt/QtWidgets/qcombobox.h \
   /usr/include/qt/QtWidgets/qframe.h \
+  /usr/include/qt/QtWidgets/qgridlayout.h \
   /usr/include/qt/QtWidgets/qlabel.h \
+  /usr/include/qt/QtWidgets/qlayout.h \
+  /usr/include/qt/QtWidgets/qlayoutitem.h \
+  /usr/include/qt/QtWidgets/qpushbutton.h \
   /usr/include/qt/QtWidgets/qrubberband.h \
   /usr/include/qt/QtWidgets/qsizepolicy.h \
   /usr/include/qt/QtWidgets/qslider.h \

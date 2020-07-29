@@ -161,6 +161,7 @@ examples/video/CMakeFiles/video.dir/ImageShowModel.cpp.o
 examples/video/CMakeFiles/video.dir/RSCameraManager.cpp.o
  /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSCameraManager.cpp
  /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSCameraManager.h
+ /usr/include/qt/QtCore/QReadWriteLock
  /usr/include/qt/QtCore/QThread
  /usr/include/qt/QtCore/qalgorithms.h
  /usr/include/qt/QtCore/qarraydata.h
@@ -203,6 +204,7 @@ examples/video/CMakeFiles/video.dir/RSCameraManager.cpp.o
  /usr/include/qt/QtCore/qpair.h
  /usr/include/qt/QtCore/qpoint.h
  /usr/include/qt/QtCore/qprocessordetection.h
+ /usr/include/qt/QtCore/qreadwritelock.h
  /usr/include/qt/QtCore/qrect.h
  /usr/include/qt/QtCore/qrefcount.h
  /usr/include/qt/QtCore/qregexp.h
@@ -265,6 +267,7 @@ examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.o
  /usr/include/qt/QtCore/QJsonObject
  /usr/include/qt/QtCore/QObject
  /usr/include/qt/QtCore/QPointF
+ /usr/include/qt/QtCore/QReadWriteLock
  /usr/include/qt/QtCore/QRectF
  /usr/include/qt/QtCore/QString
  /usr/include/qt/QtCore/QThread
@@ -327,6 +330,7 @@ examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.o
  /usr/include/qt/QtCore/qpair.h
  /usr/include/qt/QtCore/qpoint.h
  /usr/include/qt/QtCore/qprocessordetection.h
+ /usr/include/qt/QtCore/qreadwritelock.h
  /usr/include/qt/QtCore/qrect.h
  /usr/include/qt/QtCore/qrefcount.h
  /usr/include/qt/QtCore/qregexp.h
@@ -396,15 +400,23 @@ examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.o
  /usr/include/qt/QtWidgets/QComboBox
  /usr/include/qt/QtWidgets/QFileDialog
  /usr/include/qt/QtWidgets/QLabel
+ /usr/include/qt/QtWidgets/QPushButton
+ /usr/include/qt/QtWidgets/QVBoxLayout
  /usr/include/qt/QtWidgets/QWidget
+ /usr/include/qt/QtWidgets/qabstractbutton.h
  /usr/include/qt/QtWidgets/qabstractitemdelegate.h
  /usr/include/qt/QtWidgets/qabstractslider.h
  /usr/include/qt/QtWidgets/qabstractspinbox.h
+ /usr/include/qt/QtWidgets/qboxlayout.h
  /usr/include/qt/QtWidgets/qcombobox.h
  /usr/include/qt/QtWidgets/qdialog.h
  /usr/include/qt/QtWidgets/qfiledialog.h
  /usr/include/qt/QtWidgets/qframe.h
+ /usr/include/qt/QtWidgets/qgridlayout.h
  /usr/include/qt/QtWidgets/qlabel.h
+ /usr/include/qt/QtWidgets/qlayout.h
+ /usr/include/qt/QtWidgets/qlayoutitem.h
+ /usr/include/qt/QtWidgets/qpushbutton.h
  /usr/include/qt/QtWidgets/qrubberband.h
  /usr/include/qt/QtWidgets/qsizepolicy.h
  /usr/include/qt/QtWidgets/qslider.h
@@ -447,6 +459,7 @@ examples/video/CMakeFiles/video.dir/main.cpp.o
  /usr/include/qt/QtCore/QJsonObject
  /usr/include/qt/QtCore/QObject
  /usr/include/qt/QtCore/QPointF
+ /usr/include/qt/QtCore/QReadWriteLock
  /usr/include/qt/QtCore/QRectF
  /usr/include/qt/QtCore/QString
  /usr/include/qt/QtCore/QThread
@@ -509,6 +522,7 @@ examples/video/CMakeFiles/video.dir/main.cpp.o
  /usr/include/qt/QtCore/qpair.h
  /usr/include/qt/QtCore/qpoint.h
  /usr/include/qt/QtCore/qprocessordetection.h
+ /usr/include/qt/QtCore/qreadwritelock.h
  /usr/include/qt/QtCore/qrect.h
  /usr/include/qt/QtCore/qrefcount.h
  /usr/include/qt/QtCore/qregexp.h
@@ -581,18 +595,26 @@ examples/video/CMakeFiles/video.dir/main.cpp.o
  /usr/include/qt/QtWidgets/QGraphicsScene
  /usr/include/qt/QtWidgets/QGraphicsView
  /usr/include/qt/QtWidgets/QLabel
+ /usr/include/qt/QtWidgets/QPushButton
+ /usr/include/qt/QtWidgets/QVBoxLayout
  /usr/include/qt/QtWidgets/QWidget
+ /usr/include/qt/QtWidgets/qabstractbutton.h
  /usr/include/qt/QtWidgets/qabstractitemdelegate.h
  /usr/include/qt/QtWidgets/qabstractscrollarea.h
  /usr/include/qt/QtWidgets/qabstractslider.h
  /usr/include/qt/QtWidgets/qabstractspinbox.h
  /usr/include/qt/QtWidgets/qapplication.h
+ /usr/include/qt/QtWidgets/qboxlayout.h
  /usr/include/qt/QtWidgets/qcombobox.h
  /usr/include/qt/QtWidgets/qdesktopwidget.h
  /usr/include/qt/QtWidgets/qframe.h
  /usr/include/qt/QtWidgets/qgraphicsscene.h
  /usr/include/qt/QtWidgets/qgraphicsview.h
+ /usr/include/qt/QtWidgets/qgridlayout.h
  /usr/include/qt/QtWidgets/qlabel.h
+ /usr/include/qt/QtWidgets/qlayout.h
+ /usr/include/qt/QtWidgets/qlayoutitem.h
+ /usr/include/qt/QtWidgets/qpushbutton.h
  /usr/include/qt/QtWidgets/qrubberband.h
  /usr/include/qt/QtWidgets/qscrollarea.h
  /usr/include/qt/QtWidgets/qsizepolicy.h
@@ -631,8 +653,10 @@ examples/video/CMakeFiles/video.dir/video_autogen/mocs_compilation.cpp.o
  /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSCameraManager.h
  /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSColorImageLoaderModel.hpp
  /usr/include/qt/QtCore/QJsonObject
+ /usr/include/qt/QtCore/QList
  /usr/include/qt/QtCore/QObject
  /usr/include/qt/QtCore/QPointF
+ /usr/include/qt/QtCore/QReadWriteLock
  /usr/include/qt/QtCore/QRectF
  /usr/include/qt/QtCore/QString
  /usr/include/qt/QtCore/QThread
@@ -693,6 +717,7 @@ examples/video/CMakeFiles/video.dir/video_autogen/mocs_compilation.cpp.o
  /usr/include/qt/QtCore/qpair.h
  /usr/include/qt/QtCore/qpoint.h
  /usr/include/qt/QtCore/qprocessordetection.h
+ /usr/include/qt/QtCore/qreadwritelock.h
  /usr/include/qt/QtCore/qrect.h
  /usr/include/qt/QtCore/qrefcount.h
  /usr/include/qt/QtCore/qregexp.h
@@ -760,13 +785,21 @@ examples/video/CMakeFiles/video.dir/video_autogen/mocs_compilation.cpp.o
  /usr/include/qt/QtGui/qwindowdefs.h
  /usr/include/qt/QtGui/qwindowdefs_win.h
  /usr/include/qt/QtWidgets/QLabel
+ /usr/include/qt/QtWidgets/QPushButton
+ /usr/include/qt/QtWidgets/QVBoxLayout
  /usr/include/qt/QtWidgets/QWidget
+ /usr/include/qt/QtWidgets/qabstractbutton.h
  /usr/include/qt/QtWidgets/qabstractitemdelegate.h
  /usr/include/qt/QtWidgets/qabstractslider.h
  /usr/include/qt/QtWidgets/qabstractspinbox.h
+ /usr/include/qt/QtWidgets/qboxlayout.h
  /usr/include/qt/QtWidgets/qcombobox.h
  /usr/include/qt/QtWidgets/qframe.h
+ /usr/include/qt/QtWidgets/qgridlayout.h
  /usr/include/qt/QtWidgets/qlabel.h
+ /usr/include/qt/QtWidgets/qlayout.h
+ /usr/include/qt/QtWidgets/qlayoutitem.h
+ /usr/include/qt/QtWidgets/qpushbutton.h
  /usr/include/qt/QtWidgets/qrubberband.h
  /usr/include/qt/QtWidgets/qsizepolicy.h
  /usr/include/qt/QtWidgets/qslider.h

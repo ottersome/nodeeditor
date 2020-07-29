@@ -5,25 +5,18 @@
 
 #include <QtWidgets/QFileDialog>
 #include <QComboBox>
+#include <librealsense2/h/rs_sensor.h>
 #include <memory>
 #include <qnamespace.h>
 #include <stdexcept>
 
 RSColorImageLoaderModel::
 RSColorImageLoaderModel()
-  : //_label(new QLabel("Double click to load image",&_parentWidget,Qt::WindowFlags())),
-  _cbCameraList(new QComboBox(&_parentWidget))
+  : _layout(new QVBoxLayout()),
+    _cbCameraList(new QComboBox()),
+    _b_refreshList(new QPushButton("Refresh List"))
 {
     printf("New Rs image loader\n");
-    //Label Settings(Might erase them later tbh)
-    //_label->setAlignment(Qt::AlignVCenter | Qt::AlignHCenter);
-    //QFont f = _label->font();
-    //f.setBold(true);
-    //f.setItalic(true);
-    //_label->setFont(f);
-    //_label->setFixedSize(200, 200);
-    //_label->installEventFilter(this);
-
     //Create Timer Label
     _cbCameraList->addItem(QString("No camera connected."));
     _cbCameraList->setDisabled(true);
@@ -31,7 +24,32 @@ RSColorImageLoaderModel()
     //connect and disconnect devices.
     //...or maybe just a refresh button. either or, not now
     _cbCameraList->installEventFilter(this);
+    //Once updated we loop through it and populate the combobox
 
+    connect(_cbCameraList, SIGNAL(activated(int)), this, SLOT(changeCamera(int)));
+    if(CameraManager::getDeviceList().size() >0 ){
+        _cbCameraList->clear();
+        _cbCameraList->setDisabled(false);
+
+        int counter = 0;
+        for(auto&& dev :  CameraManager::getDeviceList()){
+            if(counter==0){
+                _camman = new CameraManager(dev.get_info(RS2_CAMERA_INFO_SERIAL_NUMBER),640,480,640,480,30);
+                connect(_camman, &CameraManager::framesReady, this, &RSColorImageLoaderModel::receiveFrame);
+                _camman->start();
+            }
+
+            printf("This is a camera : %s\n",dev.get_info(RS2_CAMERA_INFO_NAME));
+            _cbCameraList->addItem(dev.get_info(RS2_CAMERA_INFO_NAME));
+        }
+    }
+    //Initialize the button
+
+    //Add to layout
+    _layout->addWidget(_cbCameraList);
+    _layout->addWidget(_b_refreshList);
+
+    _parentWidget.setLayout(_layout);
 
     //Start Real Sense Pipeline to later pull Images
     //TODO: Might want to create a thread for this here
@@ -71,42 +89,10 @@ bool
 RSColorImageLoaderModel::
 eventFilter(QObject *object, QEvent *event)
 {
-  if (object == _label)
-  {
-    int w = _label->width();
-    int h = _label->height();
-
-    if (event->type() == QEvent::MouseButtonPress)
-    {
-
-      //QString fileName =
-        //QFileDialog::getOpenFileName(nullptr,
-                                     //tr("Open Image"),
-                                     //QDir::homePath(),
-                                     //tr("Image Files (*.png *.jpg *.bmp)"));
-
-      ////Create new pixmap for some reason
-      //_pixmap = QPixmap(fileName);
-
-      ////Set the image to the  QT Label
-      //_label->setPixmap(_pixmap.scaled(w, h, Qt::KeepAspectRatio));
-
-      ////Emit Signal
-      //Q_EMIT dataUpdated(0);
-
-      return true;
-    }
-    else if (event->type() == QEvent::Resize)
-    {
-      if (!_pixmap.isNull())
-        _label->setPixmap(_pixmap.scaled(w, h, Qt::KeepAspectRatio));
-    }
-  }else if(object == _cbCameraList){
+  if(object == _cbCameraList){
       if (event->type() == QEvent::MouseButtonPress)
       {
-          _camman = new CameraManager(640,480,640,480,30);
-          QObject::connect(_camman, &CameraManager::framesReady, this, &RSColorImageLoaderModel::receiveFrame);
-          _camman->start();
+          printf("Starting Camera\n");
 
       }
   }
@@ -127,7 +113,6 @@ dataType(PortType, PortIndex) const
   return PixmapData().type();
 }
 
-
 std::shared_ptr<NodeData>
 RSColorImageLoaderModel::
 outData(PortIndex)
@@ -143,3 +128,9 @@ void RSColorImageLoaderModel::receiveFrame(QImage rgb_image){
     Q_EMIT dataUpdated(0);
 
 }
+
+void RSColorImageLoaderModel::changeCamera(int index){
+    //Get Serial Number from the combobox
+    QVariant data = _cbCameraList->itemData(index);
+    _camman->setSerialNo(data.toString().toStdString());
+};
