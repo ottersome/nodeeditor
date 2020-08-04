@@ -10,6 +10,9 @@
 #include <qnamespace.h>
 #include <stdexcept>
 
+
+static const QString NOCAM = "No Camera Connected.";
+
 RSColorImageLoaderModel::
 RSColorImageLoaderModel()
   : _layout(new QVBoxLayout()),
@@ -17,32 +20,12 @@ RSColorImageLoaderModel()
     _b_refreshList(new QPushButton("Refresh List"))
 {
     printf("New Rs image loader\n");
-    //Create Timer Label
-    _cbCameraList->addItem(QString("No camera connected."));
-    _cbCameraList->setDisabled(true);
-    //We might want to create a thread to populate this combobox as we
-    //connect and disconnect devices.
-    //...or maybe just a refresh button. either or, not now
     _cbCameraList->installEventFilter(this);
-    //Once updated we loop through it and populate the combobox
 
+    //Create Signal-Slot COnnetions
     connect(_cbCameraList, SIGNAL(activated(int)), this, SLOT(changeCamera(int)));
-    if(CameraManager::getDeviceList().size() >0 ){
-        _cbCameraList->clear();
-        _cbCameraList->setDisabled(false);
-
-        int counter = 0;
-        for(auto&& dev :  CameraManager::getDeviceList()){
-            if(counter==0){
-                _camman = new CameraManager(dev.get_info(RS2_CAMERA_INFO_SERIAL_NUMBER),640,480,640,480,30);
-                connect(_camman, &CameraManager::framesReady, this, &RSColorImageLoaderModel::receiveFrame);
-                _camman->start();
-            }
-
-            printf("This is a camera : %s\n",dev.get_info(RS2_CAMERA_INFO_NAME));
-            _cbCameraList->addItem(dev.get_info(RS2_CAMERA_INFO_NAME));
-        }
-    }
+    connect(_b_refreshList, SIGNAL(clicked(bool)), this, SLOT(refreshSlot(bool)));
+    connect(_b_refreshList, SIGNAL(clicked(bool)), this, SLOT(refreshSlot(bool)));
     //Initialize the button
 
     //Add to layout
@@ -51,10 +34,6 @@ RSColorImageLoaderModel()
 
     _parentWidget.setLayout(_layout);
 
-    //Start Real Sense Pipeline to later pull Images
-    //TODO: Might want to create a thread for this here
-    //  since the function may block for a bit and make
-    //  the program unresponsive
 }
 
 //TODO delete this function from this file and from 
@@ -90,10 +69,13 @@ RSColorImageLoaderModel::
 eventFilter(QObject *object, QEvent *event)
 {
   if(object == _cbCameraList){
-      if (event->type() == QEvent::MouseButtonPress)
-      {
-          printf("Starting Camera\n");
-
+      if (event->type() == QEvent::Show)
+      {//TODO, not sure if this is the appropriate place to initialize the
+          ///camera
+          //if(_camman!=NULL){
+                refreshList(true);
+                //_camman->start();
+          //}
       }
   }
 
@@ -131,6 +113,38 @@ void RSColorImageLoaderModel::receiveFrame(QImage rgb_image){
 
 void RSColorImageLoaderModel::changeCamera(int index){
     //Get Serial Number from the combobox
-    QVariant data = _cbCameraList->itemData(index);
+    _curIndex = index;
+    QVariant data = _cbCameraList->itemData(_curIndex);
+    printf("Using index : %d and serial:%s\n",_curIndex,data.toString().toStdString().c_str());
     _camman->setSerialNo(data.toString().toStdString());
 };
+void RSColorImageLoaderModel::refreshList(bool initializeManager){
+    //Now we poll from our camera manager this available devices
+    _cbCameraList->clear();
+    if(CameraManager::getDeviceList().size() >0 ){
+        _cbCameraList->setDisabled(false);
+
+        int counter = 0;
+        std::string serial;
+        for(auto&& dev :  CameraManager::getDeviceList()){
+            if(counter == 0 && initializeManager){
+                _camman = new CameraManager(serial,640,480,640,480,30);
+                connect(_camman, &CameraManager::framesReady, this, &RSColorImageLoaderModel::receiveFrame);
+                _camman->start();
+                _curIndex = 0;
+                
+            }
+            serial = dev.get_info(RS2_CAMERA_INFO_SERIAL_NUMBER);
+            printf("This is a camera : %s\n",dev.get_info(RS2_CAMERA_INFO_NAME));
+            _cbCameraList->addItem(dev.get_info(RS2_CAMERA_INFO_NAME), QVariant(dev.get_info(RS2_CAMERA_INFO_SERIAL_NUMBER)));
+            _cbCameraList->setCurrentIndex(_curIndex);
+            //Set serial here
+        }
+    }else{
+        _cbCameraList->setDisabled(true);
+        _cbCameraList->addItem(NOCAM);
+    }
+}
+void RSColorImageLoaderModel::refreshSlot(bool checked){
+    refreshList(false);
+}

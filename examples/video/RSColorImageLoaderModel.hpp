@@ -81,6 +81,7 @@ protected:
 
 private:
 
+
   //Will encapsualte everything.
   QWidget  _parentWidget;
 
@@ -88,6 +89,7 @@ private:
 
   QLabel * _label;
   QComboBox  * _cbCameraList;
+  unsigned int _curIndex = 0;
   QPushButton  * _b_refreshList;
 
   QPixmap _pixmap;
@@ -97,8 +99,10 @@ private:
 private:
   //Helper functions
   void startRSPipeline();
+  void refreshList(bool initializeManager);
 
 private slots:
   void receiveFrame(QImage rgb_image);
   void changeCamera(int index);
+  void refreshSlot(bool);
 };

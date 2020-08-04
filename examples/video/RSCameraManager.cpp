@@ -29,12 +29,14 @@ CameraManager::CameraManager(
     //}
     //Done with the initialization
     camera_running=true;
-}
 
+}
 //This run is per thread, meaning that it will 
 //  be capable of indicating changes per model
 void CameraManager::run(){
+    printf("Running a single thread here\n");
     while(camera_running){
+        //printf"Still running lol\n");
         //By this point we should have a single camera
         //selected for this particular model
         //and assigned into _selectedPipeline
@@ -43,6 +45,7 @@ void CameraManager::run(){
         //_frameset = _viewPorts.find(_selViewSerial)
             //->second.pipeline.wait_for_frames();
         auto itr =  _viewPorts.find(_selViewSerial);
+        //TODO should we use semaphores for this?
         if(itr == _viewPorts.end()){
             //TODO: handle this better
             _mapLock.unlock();
@@ -87,6 +90,7 @@ QImage CameraManager::rsFrameToQImage(const rs2::frame &f){
     throw std::runtime_error("Frame format not yet supported");
 
 }
+//Static funciton called everytime theres a change in device
 void CameraManager::changeInDevice(rs2::event_information &evi){
             //Whenever theres a change in device we will reorganize
             //  our pipelines data structure.
@@ -141,6 +145,7 @@ void CameraManager::enableDevice(rs2::device dev){
             RS2_FORMAT_RGB8,
             30);
     rs2::pipeline_profile profile = p.start(c);
+    //Emplacing Viewpoerts
     _viewPorts.emplace(serial,ViewPort{profile,p});
 
     printf("Unlocking for enableDevice\n");
