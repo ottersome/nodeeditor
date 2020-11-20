@@ -74,7 +74,7 @@ include examples/styles/CMakeFiles/styles_autogen.dir/progress.make
 
 examples/styles/CMakeFiles/styles_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target styles"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/styles && /usr/bin/cmake -E cmake_autogen /home/ottersome/Projects/ITRI/nodeeditor/build/examples/styles/CMakeFiles/styles_autogen.dir/AutogenInfo.json ""
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/styles && /usr/bin/cmake -E cmake_autogen /home/ottersome/Projects/ITRI/nodeeditor/build/examples/styles/CMakeFiles/styles_autogen.dir/AutogenInfo.json Debug
 
 styles_autogen: examples/styles/CMakeFiles/styles_autogen
 styles_autogen: examples/styles/CMakeFiles/styles_autogen.dir/build.make

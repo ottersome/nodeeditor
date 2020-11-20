@@ -243,33 +243,6 @@ ImageShowModel.cpp.s:
 	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/ImageShowModel.cpp.s
 .PHONY : ImageShowModel.cpp.s
 
-RSCameraManager.o: RSCameraManager.cpp.o
-
-.PHONY : RSCameraManager.o
-
-# target to build an object file
-RSCameraManager.cpp.o:
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/RSCameraManager.cpp.o
-.PHONY : RSCameraManager.cpp.o
-
-RSCameraManager.i: RSCameraManager.cpp.i
-
-.PHONY : RSCameraManager.i
-
-# target to preprocess a source file
-RSCameraManager.cpp.i:
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/RSCameraManager.cpp.i
-.PHONY : RSCameraManager.cpp.i
-
-RSCameraManager.s: RSCameraManager.cpp.s
-
-.PHONY : RSCameraManager.s
-
-# target to generate assembly for a file
-RSCameraManager.cpp.s:
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/RSCameraManager.cpp.s
-.PHONY : RSCameraManager.cpp.s
-
 RSColorImageLoaderModel.o: RSColorImageLoaderModel.cpp.o
 
 .PHONY : RSColorImageLoaderModel.o
@@ -297,6 +270,33 @@ RSColorImageLoaderModel.cpp.s:
 	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.s
 .PHONY : RSColorImageLoaderModel.cpp.s
 
+ThreadSlave.o: ThreadSlave.cpp.o
+
+.PHONY : ThreadSlave.o
+
+# target to build an object file
+ThreadSlave.cpp.o:
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/ThreadSlave.cpp.o
+.PHONY : ThreadSlave.cpp.o
+
+ThreadSlave.i: ThreadSlave.cpp.i
+
+.PHONY : ThreadSlave.i
+
+# target to preprocess a source file
+ThreadSlave.cpp.i:
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/ThreadSlave.cpp.i
+.PHONY : ThreadSlave.cpp.i
+
+ThreadSlave.s: ThreadSlave.cpp.s
+
+.PHONY : ThreadSlave.s
+
+# target to generate assembly for a file
+ThreadSlave.cpp.s:
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/ThreadSlave.cpp.s
+.PHONY : ThreadSlave.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -323,6 +323,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+realsense.o: realsense.cpp.o
+
+.PHONY : realsense.o
+
+# target to build an object file
+realsense.cpp.o:
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/realsense.cpp.o
+.PHONY : realsense.cpp.o
+
+realsense.i: realsense.cpp.i
+
+.PHONY : realsense.i
+
+# target to preprocess a source file
+realsense.cpp.i:
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/realsense.cpp.i
+.PHONY : realsense.cpp.i
+
+realsense.s: realsense.cpp.s
+
+.PHONY : realsense.s
+
+# target to generate assembly for a file
+realsense.cpp.s:
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build && $(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/realsense.cpp.s
+.PHONY : realsense.cpp.s
 
 video_autogen/mocs_compilation.o: video_autogen/mocs_compilation.cpp.o
 
@@ -369,15 +396,18 @@ help:
 	@echo "... ImageShowModel.o"
 	@echo "... ImageShowModel.i"
 	@echo "... ImageShowModel.s"
-	@echo "... RSCameraManager.o"
-	@echo "... RSCameraManager.i"
-	@echo "... RSCameraManager.s"
 	@echo "... RSColorImageLoaderModel.o"
 	@echo "... RSColorImageLoaderModel.i"
 	@echo "... RSColorImageLoaderModel.s"
+	@echo "... ThreadSlave.o"
+	@echo "... ThreadSlave.i"
+	@echo "... ThreadSlave.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... realsense.o"
+	@echo "... realsense.i"
+	@echo "... realsense.s"
 	@echo "... video_autogen/mocs_compilation.o"
 	@echo "... video_autogen/mocs_compilation.i"
 	@echo "... video_autogen/mocs_compilation.s"

@@ -102,22 +102,9 @@ examples/video/CMakeFiles/video.dir/ImageShowModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/video.dir/ImageShowModel.cpp.s"
 	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ottersome/Projects/ITRI/nodeeditor/examples/video/ImageShowModel.cpp -o CMakeFiles/video.dir/ImageShowModel.cpp.s
 
-examples/video/CMakeFiles/video.dir/RSCameraManager.cpp.o: examples/video/CMakeFiles/video.dir/flags.make
-examples/video/CMakeFiles/video.dir/RSCameraManager.cpp.o: ../examples/video/RSCameraManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object examples/video/CMakeFiles/video.dir/RSCameraManager.cpp.o"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/video.dir/RSCameraManager.cpp.o -c /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSCameraManager.cpp
-
-examples/video/CMakeFiles/video.dir/RSCameraManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/video.dir/RSCameraManager.cpp.i"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSCameraManager.cpp > CMakeFiles/video.dir/RSCameraManager.cpp.i
-
-examples/video/CMakeFiles/video.dir/RSCameraManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/video.dir/RSCameraManager.cpp.s"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSCameraManager.cpp -o CMakeFiles/video.dir/RSCameraManager.cpp.s
-
 examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.o: examples/video/CMakeFiles/video.dir/flags.make
 examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.o: ../examples/video/RSColorImageLoaderModel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.o"
 	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.o -c /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSColorImageLoaderModel.cpp
 
 examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.i: cmake_force
@@ -127,6 +114,19 @@ examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.i: cmake_force
 examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.s"
 	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ottersome/Projects/ITRI/nodeeditor/examples/video/RSColorImageLoaderModel.cpp -o CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.s
+
+examples/video/CMakeFiles/video.dir/ThreadSlave.cpp.o: examples/video/CMakeFiles/video.dir/flags.make
+examples/video/CMakeFiles/video.dir/ThreadSlave.cpp.o: ../examples/video/ThreadSlave.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object examples/video/CMakeFiles/video.dir/ThreadSlave.cpp.o"
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/video.dir/ThreadSlave.cpp.o -c /home/ottersome/Projects/ITRI/nodeeditor/examples/video/ThreadSlave.cpp
+
+examples/video/CMakeFiles/video.dir/ThreadSlave.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/video.dir/ThreadSlave.cpp.i"
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ottersome/Projects/ITRI/nodeeditor/examples/video/ThreadSlave.cpp > CMakeFiles/video.dir/ThreadSlave.cpp.i
+
+examples/video/CMakeFiles/video.dir/ThreadSlave.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/video.dir/ThreadSlave.cpp.s"
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ottersome/Projects/ITRI/nodeeditor/examples/video/ThreadSlave.cpp -o CMakeFiles/video.dir/ThreadSlave.cpp.s
 
 examples/video/CMakeFiles/video.dir/main.cpp.o: examples/video/CMakeFiles/video.dir/flags.make
 examples/video/CMakeFiles/video.dir/main.cpp.o: ../examples/video/main.cpp
@@ -141,31 +141,195 @@ examples/video/CMakeFiles/video.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/video.dir/main.cpp.s"
 	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ottersome/Projects/ITRI/nodeeditor/examples/video/main.cpp -o CMakeFiles/video.dir/main.cpp.s
 
+examples/video/CMakeFiles/video.dir/realsense.cpp.o: examples/video/CMakeFiles/video.dir/flags.make
+examples/video/CMakeFiles/video.dir/realsense.cpp.o: ../examples/video/realsense.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object examples/video/CMakeFiles/video.dir/realsense.cpp.o"
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/video.dir/realsense.cpp.o -c /home/ottersome/Projects/ITRI/nodeeditor/examples/video/realsense.cpp
+
+examples/video/CMakeFiles/video.dir/realsense.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/video.dir/realsense.cpp.i"
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ottersome/Projects/ITRI/nodeeditor/examples/video/realsense.cpp > CMakeFiles/video.dir/realsense.cpp.i
+
+examples/video/CMakeFiles/video.dir/realsense.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/video.dir/realsense.cpp.s"
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ottersome/Projects/ITRI/nodeeditor/examples/video/realsense.cpp -o CMakeFiles/video.dir/realsense.cpp.s
+
 # Object files for target video
 video_OBJECTS = \
 "CMakeFiles/video.dir/video_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/video.dir/ImageShowModel.cpp.o" \
-"CMakeFiles/video.dir/RSCameraManager.cpp.o" \
 "CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.o" \
-"CMakeFiles/video.dir/main.cpp.o"
+"CMakeFiles/video.dir/ThreadSlave.cpp.o" \
+"CMakeFiles/video.dir/main.cpp.o" \
+"CMakeFiles/video.dir/realsense.cpp.o"
 
 # External object files for target video
 video_EXTERNAL_OBJECTS =
 
 bin/video: examples/video/CMakeFiles/video.dir/video_autogen/mocs_compilation.cpp.o
 bin/video: examples/video/CMakeFiles/video.dir/ImageShowModel.cpp.o
-bin/video: examples/video/CMakeFiles/video.dir/RSCameraManager.cpp.o
 bin/video: examples/video/CMakeFiles/video.dir/RSColorImageLoaderModel.cpp.o
+bin/video: examples/video/CMakeFiles/video.dir/ThreadSlave.cpp.o
 bin/video: examples/video/CMakeFiles/video.dir/main.cpp.o
+bin/video: examples/video/CMakeFiles/video.dir/realsense.cpp.o
 bin/video: examples/video/CMakeFiles/video.dir/build.make
 bin/video: lib/libnodes.so
-bin/video: /usr/lib/libQt5OpenGL.so.5.15.0
-bin/video: /usr/lib/libQt5Widgets.so.5.15.0
-bin/video: /usr/lib/libQt5Gui.so.5.15.0
-bin/video: /usr/lib/libQt5Core.so.5.15.0
 bin/video: /usr/lib/librealsense2.so
+bin/video: /usr/lib/libopencv_gapi.so.4.5.0
+bin/video: /usr/lib/libopencv_stitching.so.4.5.0
+bin/video: /usr/lib/libopencv_alphamat.so.4.5.0
+bin/video: /usr/lib/libopencv_aruco.so.4.5.0
+bin/video: /usr/lib/libopencv_bgsegm.so.4.5.0
+bin/video: /usr/lib/libopencv_bioinspired.so.4.5.0
+bin/video: /usr/lib/libopencv_ccalib.so.4.5.0
+bin/video: /usr/lib/libopencv_cvv.so.4.5.0
+bin/video: /usr/lib/libopencv_dnn_objdetect.so.4.5.0
+bin/video: /usr/lib/libopencv_dnn_superres.so.4.5.0
+bin/video: /usr/lib/libopencv_dpm.so.4.5.0
+bin/video: /usr/lib/libopencv_highgui.so.4.5.0
+bin/video: /usr/lib/libQt5OpenGL.so.5.15.1
+bin/video: /usr/lib/libopencv_face.so.4.5.0
+bin/video: /usr/lib/libopencv_freetype.so.4.5.0
+bin/video: /usr/lib/libopencv_fuzzy.so.4.5.0
+bin/video: /usr/lib/libopencv_hdf.so.4.5.0
+bin/video: /usr/lib/libopencv_hfs.so.4.5.0
+bin/video: /usr/lib/libopencv_img_hash.so.4.5.0
+bin/video: /usr/lib/libopencv_intensity_transform.so.4.5.0
+bin/video: /usr/lib/libopencv_line_descriptor.so.4.5.0
+bin/video: /usr/lib/libopencv_mcc.so.4.5.0
+bin/video: /usr/lib/libopencv_quality.so.4.5.0
+bin/video: /usr/lib/libopencv_rapid.so.4.5.0
+bin/video: /usr/lib/libopencv_reg.so.4.5.0
+bin/video: /usr/lib/libopencv_rgbd.so.4.5.0
+bin/video: /usr/lib/libopencv_saliency.so.4.5.0
+bin/video: /usr/lib/libopencv_stereo.so.4.5.0
+bin/video: /usr/lib/libopencv_structured_light.so.4.5.0
+bin/video: /usr/lib/libopencv_phase_unwrapping.so.4.5.0
+bin/video: /usr/lib/libopencv_superres.so.4.5.0
+bin/video: /usr/lib/libopencv_optflow.so.4.5.0
+bin/video: /usr/lib/libopencv_surface_matching.so.4.5.0
+bin/video: /usr/lib/libopencv_tracking.so.4.5.0
+bin/video: /usr/lib/libopencv_datasets.so.4.5.0
+bin/video: /usr/lib/libopencv_plot.so.4.5.0
+bin/video: /usr/lib/libopencv_text.so.4.5.0
+bin/video: /usr/lib/libopencv_dnn.so.4.5.0
+bin/video: /usr/lib/libopencv_videostab.so.4.5.0
+bin/video: /usr/lib/libopencv_videoio.so.4.5.0
+bin/video: /usr/lib/libopencv_viz.so.4.5.0
+bin/video: /usr/lib/libopencv_xfeatures2d.so.4.5.0
+bin/video: /usr/lib/libopencv_ml.so.4.5.0
+bin/video: /usr/lib/libopencv_shape.so.4.5.0
+bin/video: /usr/lib/libopencv_ximgproc.so.4.5.0
+bin/video: /usr/lib/libopencv_video.so.4.5.0
+bin/video: /usr/lib/libopencv_xobjdetect.so.4.5.0
+bin/video: /usr/lib/libopencv_imgcodecs.so.4.5.0
+bin/video: /usr/lib/libopencv_objdetect.so.4.5.0
+bin/video: /usr/lib/libopencv_calib3d.so.4.5.0
+bin/video: /usr/lib/libopencv_features2d.so.4.5.0
+bin/video: /usr/lib/libopencv_flann.so.4.5.0
+bin/video: /usr/lib/libopencv_xphoto.so.4.5.0
+bin/video: /usr/lib/libopencv_photo.so.4.5.0
+bin/video: /usr/lib/libopencv_imgproc.so.4.5.0
+bin/video: /usr/lib/libopencv_core.so.4.5.0
+bin/video: /usr/lib/libpcl_surface.so
+bin/video: /usr/lib/libpcl_keypoints.so
+bin/video: /usr/lib/libpcl_tracking.so
+bin/video: /usr/lib/libpcl_recognition.so
+bin/video: /usr/lib/libpcl_registration.so
+bin/video: /usr/lib/libpcl_stereo.so
+bin/video: /usr/lib/libpcl_outofcore.so
+bin/video: /usr/lib/libpcl_people.so
+bin/video: /usr/lib/libpcl_segmentation.so
+bin/video: /usr/lib/libpcl_features.so
+bin/video: /usr/lib/libpcl_filters.so
+bin/video: /usr/lib/libpcl_sample_consensus.so
+bin/video: /usr/lib/libpcl_ml.so
+bin/video: /usr/lib/libpcl_visualization.so
+bin/video: /usr/lib/libpcl_search.so
+bin/video: /usr/lib/libpcl_kdtree.so
+bin/video: /usr/lib/libpcl_io.so
+bin/video: /usr/lib/libpcl_octree.so
+bin/video: /usr/lib/libpcl_common.so
+bin/video: /usr/lib/libboost_system.so
+bin/video: /usr/lib/libboost_filesystem.so
+bin/video: /usr/lib/libboost_date_time.so
+bin/video: /usr/lib/libboost_iostreams.so
+bin/video: /usr/lib/libboost_serialization.so
+bin/video: /usr/lib/libboost_regex.so
+bin/video: /usr/lib/libqhull.so
+bin/video: /usr/lib/libvtkChartsCore.so.1
+bin/video: /usr/lib/libvtkInfovisCore.so.1
+bin/video: /usr/lib/libjpeg.so
+bin/video: /usr/lib/libpng.so
+bin/video: /usr/lib/libtiff.so
+bin/video: /usr/lib/libdouble-conversion.so
+bin/video: /usr/lib/liblz4.so
+bin/video: /usr/lib/liblzma.so
+bin/video: /usr/lib/libexpat.so
+bin/video: /usr/lib/libvtkIOGeometry.so.1
+bin/video: /usr/lib/libvtkIOLegacy.so.1
+bin/video: /usr/lib/libvtkIOPLY.so.1
+bin/video: /usr/lib/libvtkRenderingLOD.so.1
+bin/video: /usr/lib/libvtkViewsContext2D.so.1
+bin/video: /usr/lib/libvtkViewsCore.so.1
+bin/video: /usr/lib/libvtkInteractionWidgets.so.1
+bin/video: /usr/lib/libvtkFiltersModeling.so.1
+bin/video: /usr/lib/libvtkFiltersHybrid.so.1
+bin/video: /usr/lib/libvtkImagingGeneral.so.1
+bin/video: /usr/lib/libvtkImagingSources.so.1
+bin/video: /usr/lib/libvtkImagingHybrid.so.1
+bin/video: /usr/lib/libvtkIOImage.so.1
+bin/video: /usr/lib/libvtkDICOMParser.so.1
+bin/video: /usr/lib/libvtkmetaio.so.1
+bin/video: /usr/lib/libz.so
+bin/video: /usr/lib/libvtkRenderingAnnotation.so.1
+bin/video: /usr/lib/libvtkImagingColor.so.1
+bin/video: /usr/lib/libvtkRenderingVolume.so.1
+bin/video: /usr/lib/libvtkIOXML.so.1
+bin/video: /usr/lib/libvtkIOXMLParser.so.1
+bin/video: /usr/lib/libvtkIOCore.so.1
+bin/video: /usr/lib/libvtkRenderingContextOpenGL2.so.1
+bin/video: /usr/lib/libvtkRenderingContext2D.so.1
+bin/video: /usr/lib/libGLEW.so
+bin/video: /usr/lib/libvtkRenderingQt.so.1
+bin/video: /usr/lib/libvtkFiltersTexture.so.1
+bin/video: /usr/lib/libvtkGUISupportQt.so.1
+bin/video: /usr/lib/libQt5Widgets.so.5.15.1
+bin/video: /usr/lib/libQt5Gui.so.5.15.1
+bin/video: /usr/lib/libQt5Core.so.5.15.1
+bin/video: /usr/lib/libvtkInteractionStyle.so.1
+bin/video: /usr/lib/libvtkFiltersExtraction.so.1
+bin/video: /usr/lib/libvtkFiltersStatistics.so.1
+bin/video: /usr/lib/libvtkImagingFourier.so.1
+bin/video: /usr/lib/libvtkImagingCore.so.1
+bin/video: /usr/lib/libvtkRenderingOpenGL2.so.1
+bin/video: /usr/lib/libSM.so
+bin/video: /usr/lib/libICE.so
+bin/video: /usr/lib/libX11.so
+bin/video: /usr/lib/libXext.so
+bin/video: /usr/lib/libXt.so
+bin/video: /usr/lib/libvtkRenderingLabel.so.1
+bin/video: /usr/lib/libvtkRenderingFreeType.so.1
+bin/video: /usr/lib/libvtkRenderingCore.so.1
+bin/video: /usr/lib/libvtkCommonColor.so.1
+bin/video: /usr/lib/libvtkFiltersGeometry.so.1
+bin/video: /usr/lib/libvtkFiltersSources.so.1
+bin/video: /usr/lib/libvtkFiltersGeneral.so.1
+bin/video: /usr/lib/libvtkCommonComputationalGeometry.so.1
+bin/video: /usr/lib/libvtkFiltersCore.so.1
+bin/video: /usr/lib/libvtkCommonExecutionModel.so.1
+bin/video: /usr/lib/libvtkCommonDataModel.so.1
+bin/video: /usr/lib/libvtkCommonTransforms.so.1
+bin/video: /usr/lib/libvtkCommonMisc.so.1
+bin/video: /usr/lib/libvtkCommonMath.so.1
+bin/video: /usr/lib/libvtkCommonSystem.so.1
+bin/video: /usr/lib/libvtkCommonCore.so.1
+bin/video: /usr/lib/libvtksys.so.1
+bin/video: /usr/lib/libfreetype.so
+bin/video: /usr/lib/libflann_cpp.so
+bin/video: /usr/lib/librealsense2.so.2.39.0
 bin/video: examples/video/CMakeFiles/video.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../../bin/video"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ../../bin/video"
 	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/video && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/video.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

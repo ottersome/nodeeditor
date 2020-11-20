@@ -4,6 +4,8 @@ cmake_minimum_required(VERSION 3.2)
 #Set Project name
 project(NodeEditor CXX)
 
+# Luis: THis is for debug symbols
+set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
 set(CMAKE_DISABLE_SOURCE_CHANGES  ON)
 SET( CMAKE_EXPORT_COMPILE_COMMANDS ON )
@@ -42,6 +44,9 @@ find_package(Qt5 5.3 COMPONENTS
              Widgets
              Gui
              OpenGL)
+find_package(OpenCV REQUIRED)
+find_package(PCL REQUIRED)
+find_package(realsense2 REQUIRED)
 
 qt5_add_resources(RESOURCES ./resources/resources.qrc)
 
@@ -60,6 +65,9 @@ if(WIN32)
     set(ADDITIONAL_INCLUDE_DIRS "C:\\Program Files (x86)\\Intel RealSense SDK 2.0\\include")   # TODO: Update this variable to correct path - folder where librealsense2 folder is found
 endif()
 
+if(UNIX)
+    set(ADDITIONAL_INCLUDE_DIRS "/usr/include/librealsense2")   # TODO: Update this variable to correct path - folder where librealsense2 folder is found
+endif()
 
 find_library(REALSENSE2_FOUND realsense2 HINTS ${LIBRARY_DIR} REQUIRED)
 if(NOT REALSENSE2_FOUND)
@@ -67,8 +75,17 @@ if(NOT REALSENSE2_FOUND)
     message(WARN "Failed to find_library(realsense2)")
 endif()
 # getting-started
-include_directories(nodes ${ADDITIONAL_INCLUDE_DIRS})
+include_directories(nodes 
+    ${ADDITIONAL_INCLUDE_DIRS}
+    ${OpenCV_INCLUDE_DIRS}
+    ${OpenCV_INCLUDE_DIRS}
+    ${PCL_INCLUDE_DIRS}
+    ${realsense2_INCLUDE_DIRS}
+    ${realsense2_INCLUDES}
+    )
 
+link_directories(${PCL_LIBRARY_DIRS})
+add_definitions(${PCL_DEFINITIONS})
 # Post Build script to copy realsense2.dll
 if(WIN32)
 message(STATUS "Adding Post build script to copy realsense2.dll to project's binary folder")
@@ -126,6 +143,7 @@ target_include_directories(nodes
   PRIVATE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/nodes/internal>
+    ${realsense_INCLUDE_DIR}
 )
 
 target_link_libraries(nodes
@@ -135,6 +153,9 @@ target_link_libraries(nodes
     Qt5::Gui
     Qt5::OpenGL
     ${REALSENSE2_FOUND}
+    ${OpenCV_LIBS}
+    ${PCL_LIBRARIES}
+    ${realsense2_LIBRARY}
 )
 
 target_compile_definitions(nodes

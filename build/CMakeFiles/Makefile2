@@ -304,12 +304,12 @@ test/clean: test/CMakeFiles/test_nodes_autogen.dir/clean
 CMakeFiles/nodes.dir/all: CMakeFiles/nodes_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodes.dir/build.make CMakeFiles/nodes.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodes.dir/build.make CMakeFiles/nodes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83 "Built target nodes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82 "Built target nodes"
 .PHONY : CMakeFiles/nodes.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nodes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 64
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 63
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nodes.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : CMakeFiles/nodes.dir/rule
@@ -331,7 +331,7 @@ CMakeFiles/nodes.dir/clean:
 CMakeFiles/nodes_autogen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodes_autogen.dir/build.make CMakeFiles/nodes_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nodes_autogen.dir/build.make CMakeFiles/nodes_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=84 "Built target nodes_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=83 "Built target nodes_autogen"
 .PHONY : CMakeFiles/nodes_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -364,7 +364,7 @@ examples/connection_colors/CMakeFiles/connection_colors.dir/all: examples/connec
 
 # Build rule for subdir invocation for target.
 examples/connection_colors/CMakeFiles/connection_colors.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 68
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 67
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/connection_colors/CMakeFiles/connection_colors.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : examples/connection_colors/CMakeFiles/connection_colors.dir/rule
@@ -391,7 +391,7 @@ examples/connection_colors/CMakeFiles/connection_colors_autogen.dir/all: CMakeFi
 
 # Build rule for subdir invocation for target.
 examples/connection_colors/CMakeFiles/connection_colors_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/connection_colors/CMakeFiles/connection_colors_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : examples/connection_colors/CMakeFiles/connection_colors_autogen.dir/rule
@@ -414,12 +414,12 @@ examples/example2/CMakeFiles/example2.dir/all: CMakeFiles/nodes.dir/all
 examples/example2/CMakeFiles/example2.dir/all: examples/example2/CMakeFiles/example2_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/example2/CMakeFiles/example2.dir/build.make examples/example2/CMakeFiles/example2.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/example2/CMakeFiles/example2.dir/build.make examples/example2/CMakeFiles/example2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=12,13,14,15 "Built target example2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=12,13,14 "Built target example2"
 .PHONY : examples/example2/CMakeFiles/example2.dir/all
 
 # Build rule for subdir invocation for target.
 examples/example2/CMakeFiles/example2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 68
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 67
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/example2/CMakeFiles/example2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : examples/example2/CMakeFiles/example2.dir/rule
@@ -441,7 +441,7 @@ examples/example2/CMakeFiles/example2.dir/clean:
 examples/example2/CMakeFiles/example2_autogen.dir/all: CMakeFiles/nodes.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/example2/CMakeFiles/example2_autogen.dir/build.make examples/example2/CMakeFiles/example2_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/example2/CMakeFiles/example2_autogen.dir/build.make examples/example2/CMakeFiles/example2_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num= "Built target example2_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=15 "Built target example2_autogen"
 .PHONY : examples/example2/CMakeFiles/example2_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -474,7 +474,7 @@ examples/calculator/CMakeFiles/calculator.dir/all: examples/calculator/CMakeFile
 
 # Build rule for subdir invocation for target.
 examples/calculator/CMakeFiles/calculator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 71
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 70
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/calculator/CMakeFiles/calculator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : examples/calculator/CMakeFiles/calculator.dir/rule
@@ -501,7 +501,7 @@ examples/calculator/CMakeFiles/calculator_autogen.dir/all: CMakeFiles/nodes.dir/
 
 # Build rule for subdir invocation for target.
 examples/calculator/CMakeFiles/calculator_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/calculator/CMakeFiles/calculator_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : examples/calculator/CMakeFiles/calculator_autogen.dir/rule
@@ -529,7 +529,7 @@ examples/images/CMakeFiles/images.dir/all: examples/images/CMakeFiles/images_aut
 
 # Build rule for subdir invocation for target.
 examples/images/CMakeFiles/images.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 69
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/images/CMakeFiles/images.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : examples/images/CMakeFiles/images.dir/rule
@@ -556,7 +556,7 @@ examples/images/CMakeFiles/images_autogen.dir/all: CMakeFiles/nodes.dir/all
 
 # Build rule for subdir invocation for target.
 examples/images/CMakeFiles/images_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/images/CMakeFiles/images_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : examples/images/CMakeFiles/images_autogen.dir/rule
@@ -579,12 +579,12 @@ examples/styles/CMakeFiles/styles.dir/all: CMakeFiles/nodes.dir/all
 examples/styles/CMakeFiles/styles.dir/all: examples/styles/CMakeFiles/styles_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/styles/CMakeFiles/styles.dir/build.make examples/styles/CMakeFiles/styles.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/styles/CMakeFiles/styles.dir/build.make examples/styles/CMakeFiles/styles.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=85,86,87 "Built target styles"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=84,85,86 "Built target styles"
 .PHONY : examples/styles/CMakeFiles/styles.dir/all
 
 # Build rule for subdir invocation for target.
 examples/styles/CMakeFiles/styles.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 68
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 67
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/styles/CMakeFiles/styles.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : examples/styles/CMakeFiles/styles.dir/rule
@@ -606,12 +606,12 @@ examples/styles/CMakeFiles/styles.dir/clean:
 examples/styles/CMakeFiles/styles_autogen.dir/all: CMakeFiles/nodes.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/styles/CMakeFiles/styles_autogen.dir/build.make examples/styles/CMakeFiles/styles_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/styles/CMakeFiles/styles_autogen.dir/build.make examples/styles/CMakeFiles/styles_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=88 "Built target styles_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=87 "Built target styles_autogen"
 .PHONY : examples/styles/CMakeFiles/styles_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 examples/styles/CMakeFiles/styles_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/styles/CMakeFiles/styles_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : examples/styles/CMakeFiles/styles_autogen.dir/rule
@@ -634,7 +634,7 @@ examples/video/CMakeFiles/video.dir/all: CMakeFiles/nodes.dir/all
 examples/video/CMakeFiles/video.dir/all: examples/video/CMakeFiles/video_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/depend
 	$(MAKE) $(MAKESILENT) -f examples/video/CMakeFiles/video.dir/build.make examples/video/CMakeFiles/video.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=95,96,97,98,99 "Built target video"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=94,95,96,97,98,99 "Built target video"
 .PHONY : examples/video/CMakeFiles/video.dir/all
 
 # Build rule for subdir invocation for target.
@@ -666,7 +666,7 @@ examples/video/CMakeFiles/video_autogen.dir/all: CMakeFiles/nodes.dir/all
 
 # Build rule for subdir invocation for target.
 examples/video/CMakeFiles/video_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/video/CMakeFiles/video_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : examples/video/CMakeFiles/video_autogen.dir/rule
@@ -689,12 +689,12 @@ test/CMakeFiles/test_nodes.dir/all: CMakeFiles/nodes.dir/all
 test/CMakeFiles/test_nodes.dir/all: test/CMakeFiles/test_nodes_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_nodes.dir/build.make test/CMakeFiles/test_nodes.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_nodes.dir/build.make test/CMakeFiles/test_nodes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=89,90,91,92,93 "Built target test_nodes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=88,89,90,91,92 "Built target test_nodes"
 .PHONY : test/CMakeFiles/test_nodes.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_nodes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 70
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 69
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_nodes.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_nodes.dir/rule
@@ -716,12 +716,12 @@ test/CMakeFiles/test_nodes.dir/clean:
 test/CMakeFiles/test_nodes_autogen.dir/all: CMakeFiles/nodes.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_nodes_autogen.dir/build.make test/CMakeFiles/test_nodes_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_nodes_autogen.dir/build.make test/CMakeFiles/test_nodes_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=94 "Built target test_nodes_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=93 "Built target test_nodes_autogen"
 .PHONY : test/CMakeFiles/test_nodes_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/test_nodes_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 65
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_nodes_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles 0
 .PHONY : test/CMakeFiles/test_nodes_autogen.dir/rule

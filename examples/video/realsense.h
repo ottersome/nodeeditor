@@ -132,6 +132,7 @@ public:
     //For Realsense direct support
     rs2::frame returnColorFrame();
     QImage rsFrameToQImage(const rs2::frame & f);
+    static rs2::device_list getDeviceList(){return ctx.query_devices();}
 
 private:
 	//// Initialize

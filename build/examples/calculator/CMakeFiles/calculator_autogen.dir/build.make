@@ -74,7 +74,7 @@ include examples/calculator/CMakeFiles/calculator_autogen.dir/progress.make
 
 examples/calculator/CMakeFiles/calculator_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target calculator"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/calculator && /usr/bin/cmake -E cmake_autogen /home/ottersome/Projects/ITRI/nodeeditor/build/examples/calculator/CMakeFiles/calculator_autogen.dir/AutogenInfo.json ""
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/calculator && /usr/bin/cmake -E cmake_autogen /home/ottersome/Projects/ITRI/nodeeditor/build/examples/calculator/CMakeFiles/calculator_autogen.dir/AutogenInfo.json Debug
 
 calculator_autogen: examples/calculator/CMakeFiles/calculator_autogen
 calculator_autogen: examples/calculator/CMakeFiles/calculator_autogen.dir/build.make

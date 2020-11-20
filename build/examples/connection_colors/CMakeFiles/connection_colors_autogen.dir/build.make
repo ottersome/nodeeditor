@@ -74,7 +74,7 @@ include examples/connection_colors/CMakeFiles/connection_colors_autogen.dir/prog
 
 examples/connection_colors/CMakeFiles/connection_colors_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target connection_colors"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/connection_colors && /usr/bin/cmake -E cmake_autogen /home/ottersome/Projects/ITRI/nodeeditor/build/examples/connection_colors/CMakeFiles/connection_colors_autogen.dir/AutogenInfo.json ""
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/connection_colors && /usr/bin/cmake -E cmake_autogen /home/ottersome/Projects/ITRI/nodeeditor/build/examples/connection_colors/CMakeFiles/connection_colors_autogen.dir/AutogenInfo.json Debug
 
 connection_colors_autogen: examples/connection_colors/CMakeFiles/connection_colors_autogen
 connection_colors_autogen: examples/connection_colors/CMakeFiles/connection_colors_autogen.dir/build.make

@@ -6,6 +6,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
+#include <QThread>
 
 #include <nodes/DataModelRegistry>
 #include <nodes/NodeDataModel>
@@ -15,6 +16,7 @@
 #include <qcombobox.h>
 //#include "RSCameraManager.h"
 #include "realsense.h"
+#include "ThreadSlave.h"
 
 //Not sure if we need this quite yet
 //Theres a dependency issue or smth like that here
@@ -92,6 +94,7 @@ private:
   QComboBox  * _cbCameraList;
   unsigned int _curIndex = 0;
   QPushButton  * _b_refreshList;
+  QPushButton  * _b_startStream;
 
   QPixmap _pixmap;
 
@@ -100,6 +103,7 @@ private:
 
   //Lance's Class
   RealSense rs_man;
+  QThread workerThread;
 
 private:
   //Helper functions
@@ -108,6 +112,9 @@ private:
 
 private slots:
   void receiveFrame(QImage rgb_image);
+  void startStream(bool );
   void changeCamera(int index);
   void refreshSlot(bool);
+signals:
+  void startThread();
 };

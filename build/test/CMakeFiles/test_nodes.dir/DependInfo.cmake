@@ -15,25 +15,37 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DISABLE_LIBUSB_1_0"
+  "DISABLE_PCAP"
+  "DISABLE_PNG"
   "NODE_EDITOR_SHARED"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
-  "QT_NO_DEBUG"
   "QT_OPENGL_LIB"
   "QT_TESTCASE_BUILDDIR=\"/home/ottersome/Projects/ITRI/nodeeditor/build\""
   "QT_TESTLIB_LIB"
   "QT_WIDGETS_LIB"
+  "qh_QHpointer"
+  "vtkRenderingContext2D_AUTOINIT=1(vtkRenderingContextOpenGL2)"
+  "vtkRenderingCore_AUTOINIT=3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "test/test_nodes_autogen/include"
   "../nodes"
+  "/usr/include/librealsense2"
   "../test/../src"
   "../test/../include/internal"
   "../test/include"
   "../include"
   "external/Catch2/single_include"
+  "/usr/include/vtk"
+  "/usr/include/eigen3"
+  "/usr/include/freetype2"
+  "/usr/include/double-conversion"
+  "/usr/include/opencv4"
+  "/usr/include/pcl-1.10"
   "/usr/include/qt"
   "/usr/include/qt/QtCore"
   "/usr/lib/qt/mkspecs/linux-g++"

@@ -74,7 +74,7 @@ include examples/example2/CMakeFiles/example2_autogen.dir/progress.make
 
 examples/example2/CMakeFiles/example2_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target example2"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/example2 && /usr/bin/cmake -E cmake_autogen /home/ottersome/Projects/ITRI/nodeeditor/build/examples/example2/CMakeFiles/example2_autogen.dir/AutogenInfo.json ""
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/examples/example2 && /usr/bin/cmake -E cmake_autogen /home/ottersome/Projects/ITRI/nodeeditor/build/examples/example2/CMakeFiles/example2_autogen.dir/AutogenInfo.json Debug
 
 example2_autogen: examples/example2/CMakeFiles/example2_autogen
 example2_autogen: examples/example2/CMakeFiles/example2_autogen.dir/build.make

@@ -85,111 +85,111 @@ qrc_resources.cpp: ../resources/resources.qrc
 
 include/nodes/internal/moc_Compiler.cpp: ../include/nodes/internal/Compiler.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating include/nodes/internal/moc_Compiler.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Compiler.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Compiler.cpp_parameters_Debug
 
 include/nodes/internal/moc_Connection.cpp: ../include/nodes/internal/Connection.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating include/nodes/internal/moc_Connection.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Connection.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Connection.cpp_parameters_Debug
 
 include/nodes/internal/moc_ConnectionGeometry.cpp: ../include/nodes/internal/ConnectionGeometry.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating include/nodes/internal/moc_ConnectionGeometry.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_ConnectionGeometry.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_ConnectionGeometry.cpp_parameters_Debug
 
 include/nodes/internal/moc_ConnectionGraphicsObject.cpp: ../include/nodes/internal/ConnectionGraphicsObject.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating include/nodes/internal/moc_ConnectionGraphicsObject.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_ConnectionGraphicsObject.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_ConnectionGraphicsObject.cpp_parameters_Debug
 
 include/nodes/internal/moc_ConnectionState.cpp: ../include/nodes/internal/ConnectionState.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating include/nodes/internal/moc_ConnectionState.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_ConnectionState.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_ConnectionState.cpp_parameters_Debug
 
 include/nodes/internal/moc_ConnectionStyle.cpp: ../include/nodes/internal/ConnectionStyle.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating include/nodes/internal/moc_ConnectionStyle.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_ConnectionStyle.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_ConnectionStyle.cpp_parameters_Debug
 
 include/nodes/internal/moc_DataModelRegistry.cpp: ../include/nodes/internal/DataModelRegistry.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating include/nodes/internal/moc_DataModelRegistry.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_DataModelRegistry.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_DataModelRegistry.cpp_parameters_Debug
 
 include/nodes/internal/moc_Export.cpp: ../include/nodes/internal/Export.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating include/nodes/internal/moc_Export.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Export.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Export.cpp_parameters_Debug
 
 include/nodes/internal/moc_FlowScene.cpp: ../include/nodes/internal/FlowScene.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating include/nodes/internal/moc_FlowScene.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_FlowScene.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_FlowScene.cpp_parameters_Debug
 
 include/nodes/internal/moc_FlowView.cpp: ../include/nodes/internal/FlowView.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating include/nodes/internal/moc_FlowView.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_FlowView.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_FlowView.cpp_parameters_Debug
 
 include/nodes/internal/moc_FlowViewStyle.cpp: ../include/nodes/internal/FlowViewStyle.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating include/nodes/internal/moc_FlowViewStyle.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_FlowViewStyle.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_FlowViewStyle.cpp_parameters_Debug
 
 include/nodes/internal/moc_Node.cpp: ../include/nodes/internal/Node.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating include/nodes/internal/moc_Node.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Node.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Node.cpp_parameters_Debug
 
 include/nodes/internal/moc_NodeData.cpp: ../include/nodes/internal/NodeData.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating include/nodes/internal/moc_NodeData.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeData.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeData.cpp_parameters_Debug
 
 include/nodes/internal/moc_NodeDataModel.cpp: ../include/nodes/internal/NodeDataModel.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating include/nodes/internal/moc_NodeDataModel.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeDataModel.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeDataModel.cpp_parameters_Debug
 
 include/nodes/internal/moc_NodeGeometry.cpp: ../include/nodes/internal/NodeGeometry.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating include/nodes/internal/moc_NodeGeometry.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeGeometry.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeGeometry.cpp_parameters_Debug
 
 include/nodes/internal/moc_NodeGraphicsObject.cpp: ../include/nodes/internal/NodeGraphicsObject.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating include/nodes/internal/moc_NodeGraphicsObject.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeGraphicsObject.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeGraphicsObject.cpp_parameters_Debug
 
 include/nodes/internal/moc_NodePainterDelegate.cpp: ../include/nodes/internal/NodePainterDelegate.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating include/nodes/internal/moc_NodePainterDelegate.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodePainterDelegate.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodePainterDelegate.cpp_parameters_Debug
 
 include/nodes/internal/moc_NodeState.cpp: ../include/nodes/internal/NodeState.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating include/nodes/internal/moc_NodeState.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeState.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeState.cpp_parameters_Debug
 
 include/nodes/internal/moc_NodeStyle.cpp: ../include/nodes/internal/NodeStyle.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating include/nodes/internal/moc_NodeStyle.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeStyle.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_NodeStyle.cpp_parameters_Debug
 
 include/nodes/internal/moc_OperatingSystem.cpp: ../include/nodes/internal/OperatingSystem.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating include/nodes/internal/moc_OperatingSystem.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_OperatingSystem.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_OperatingSystem.cpp_parameters_Debug
 
 include/nodes/internal/moc_PortType.cpp: ../include/nodes/internal/PortType.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating include/nodes/internal/moc_PortType.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_PortType.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_PortType.cpp_parameters_Debug
 
 include/nodes/internal/moc_QStringStdHash.cpp: ../include/nodes/internal/QStringStdHash.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating include/nodes/internal/moc_QStringStdHash.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_QStringStdHash.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_QStringStdHash.cpp_parameters_Debug
 
 include/nodes/internal/moc_QUuidStdHash.cpp: ../include/nodes/internal/QUuidStdHash.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating include/nodes/internal/moc_QUuidStdHash.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_QUuidStdHash.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_QUuidStdHash.cpp_parameters_Debug
 
 include/nodes/internal/moc_Serializable.cpp: ../include/nodes/internal/Serializable.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating include/nodes/internal/moc_Serializable.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Serializable.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Serializable.cpp_parameters_Debug
 
 include/nodes/internal/moc_Style.cpp: ../include/nodes/internal/Style.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating include/nodes/internal/moc_Style.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Style.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_Style.cpp_parameters_Debug
 
 include/nodes/internal/moc_TypeConverter.cpp: ../include/nodes/internal/TypeConverter.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating include/nodes/internal/moc_TypeConverter.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_TypeConverter.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_TypeConverter.cpp_parameters_Debug
 
 include/nodes/internal/moc_memory.cpp: ../include/nodes/internal/memory.hpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating include/nodes/internal/moc_memory.cpp"
-	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_memory.cpp_parameters
+	cd /home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal && /usr/bin/moc @/home/ottersome/Projects/ITRI/nodeeditor/build/include/nodes/internal/moc_memory.cpp_parameters_Debug
 
 CMakeFiles/nodes.dir/nodes_autogen/mocs_compilation.cpp.o: CMakeFiles/nodes.dir/flags.make
 CMakeFiles/nodes.dir/nodes_autogen/mocs_compilation.cpp.o: nodes_autogen/mocs_compilation.cpp
@@ -948,11 +948,169 @@ lib/libnodes.so: CMakeFiles/nodes.dir/include/nodes/internal/moc_Style.cpp.o
 lib/libnodes.so: CMakeFiles/nodes.dir/include/nodes/internal/moc_TypeConverter.cpp.o
 lib/libnodes.so: CMakeFiles/nodes.dir/include/nodes/internal/moc_memory.cpp.o
 lib/libnodes.so: CMakeFiles/nodes.dir/build.make
-lib/libnodes.so: /usr/lib/libQt5OpenGL.so.5.15.0
 lib/libnodes.so: /usr/lib/librealsense2.so
-lib/libnodes.so: /usr/lib/libQt5Widgets.so.5.15.0
-lib/libnodes.so: /usr/lib/libQt5Gui.so.5.15.0
-lib/libnodes.so: /usr/lib/libQt5Core.so.5.15.0
+lib/libnodes.so: /usr/lib/libopencv_gapi.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_stitching.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_alphamat.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_aruco.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_bgsegm.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_bioinspired.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_ccalib.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_cvv.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_dnn_objdetect.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_dnn_superres.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_dpm.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_face.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_freetype.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_fuzzy.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_hdf.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_hfs.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_img_hash.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_intensity_transform.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_line_descriptor.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_mcc.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_quality.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_rapid.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_reg.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_rgbd.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_saliency.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_stereo.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_structured_light.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_superres.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_surface_matching.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_tracking.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_videostab.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_viz.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_xfeatures2d.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_xobjdetect.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_xphoto.so.4.5.0
+lib/libnodes.so: /usr/lib/libpcl_surface.so
+lib/libnodes.so: /usr/lib/libpcl_keypoints.so
+lib/libnodes.so: /usr/lib/libpcl_tracking.so
+lib/libnodes.so: /usr/lib/libpcl_recognition.so
+lib/libnodes.so: /usr/lib/libpcl_stereo.so
+lib/libnodes.so: /usr/lib/libpcl_outofcore.so
+lib/libnodes.so: /usr/lib/libpcl_people.so
+lib/libnodes.so: /usr/lib/libboost_system.so
+lib/libnodes.so: /usr/lib/libboost_filesystem.so
+lib/libnodes.so: /usr/lib/libboost_date_time.so
+lib/libnodes.so: /usr/lib/libboost_iostreams.so
+lib/libnodes.so: /usr/lib/libboost_serialization.so
+lib/libnodes.so: /usr/lib/libboost_regex.so
+lib/libnodes.so: /usr/lib/libqhull.so
+lib/libnodes.so: /usr/lib/libvtkChartsCore.so.1
+lib/libnodes.so: /usr/lib/libvtkInfovisCore.so.1
+lib/libnodes.so: /usr/lib/libfreetype.so
+lib/libnodes.so: /usr/lib/libz.so
+lib/libnodes.so: /usr/lib/libjpeg.so
+lib/libnodes.so: /usr/lib/libpng.so
+lib/libnodes.so: /usr/lib/libtiff.so
+lib/libnodes.so: /usr/lib/libdouble-conversion.so
+lib/libnodes.so: /usr/lib/liblz4.so
+lib/libnodes.so: /usr/lib/liblzma.so
+lib/libnodes.so: /usr/lib/libexpat.so
+lib/libnodes.so: /usr/lib/libvtkIOGeometry.so.1
+lib/libnodes.so: /usr/lib/libvtkIOLegacy.so.1
+lib/libnodes.so: /usr/lib/libvtkIOPLY.so.1
+lib/libnodes.so: /usr/lib/libvtkRenderingLOD.so.1
+lib/libnodes.so: /usr/lib/libvtkViewsContext2D.so.1
+lib/libnodes.so: /usr/lib/libvtkViewsCore.so.1
+lib/libnodes.so: /usr/lib/libvtkRenderingContextOpenGL2.so.1
+lib/libnodes.so: /usr/lib/libGLEW.so
+lib/libnodes.so: /usr/lib/libvtkRenderingQt.so.1
+lib/libnodes.so: /usr/lib/libvtkFiltersTexture.so.1
+lib/libnodes.so: /usr/lib/libvtkGUISupportQt.so.1
+lib/libnodes.so: /usr/lib/libvtkRenderingLabel.so.1
+lib/libnodes.so: /usr/lib/libflann_cpp.so
+lib/libnodes.so: /usr/lib/librealsense2.so.2.39.0
+lib/libnodes.so: /usr/lib/libopencv_shape.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_highgui.so.4.5.0
+lib/libnodes.so: /usr/lib/libQt5OpenGL.so.5.15.1
+lib/libnodes.so: /usr/lib/libopencv_datasets.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_plot.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_text.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_dnn.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_ml.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_phase_unwrapping.so.4.5.0
+lib/libnodes.so: /usr/lib/libpng.so
+lib/libnodes.so: /usr/lib/libtiff.so
+lib/libnodes.so: /usr/lib/libdouble-conversion.so
+lib/libnodes.so: /usr/lib/liblz4.so
+lib/libnodes.so: /usr/lib/liblzma.so
+lib/libnodes.so: /usr/lib/libexpat.so
+lib/libnodes.so: /usr/lib/libGLEW.so
+lib/libnodes.so: /usr/lib/libopencv_optflow.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_ximgproc.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_video.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_videoio.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_imgcodecs.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_objdetect.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_calib3d.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_features2d.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_flann.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_photo.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_imgproc.so.4.5.0
+lib/libnodes.so: /usr/lib/libopencv_core.so.4.5.0
+lib/libnodes.so: /usr/lib/libpcl_registration.so
+lib/libnodes.so: /usr/lib/libpcl_segmentation.so
+lib/libnodes.so: /usr/lib/libpcl_features.so
+lib/libnodes.so: /usr/lib/libpcl_filters.so
+lib/libnodes.so: /usr/lib/libpcl_sample_consensus.so
+lib/libnodes.so: /usr/lib/libpcl_ml.so
+lib/libnodes.so: /usr/lib/libpcl_visualization.so
+lib/libnodes.so: /usr/lib/libpcl_search.so
+lib/libnodes.so: /usr/lib/libpcl_kdtree.so
+lib/libnodes.so: /usr/lib/libpcl_io.so
+lib/libnodes.so: /usr/lib/libpcl_octree.so
+lib/libnodes.so: /usr/lib/libpcl_common.so
+lib/libnodes.so: /usr/lib/libvtkInteractionWidgets.so.1
+lib/libnodes.so: /usr/lib/libvtkFiltersModeling.so.1
+lib/libnodes.so: /usr/lib/libvtkFiltersHybrid.so.1
+lib/libnodes.so: /usr/lib/libvtkImagingGeneral.so.1
+lib/libnodes.so: /usr/lib/libvtkImagingSources.so.1
+lib/libnodes.so: /usr/lib/libvtkImagingHybrid.so.1
+lib/libnodes.so: /usr/lib/libvtkIOImage.so.1
+lib/libnodes.so: /usr/lib/libvtkDICOMParser.so.1
+lib/libnodes.so: /usr/lib/libvtkmetaio.so.1
+lib/libnodes.so: /usr/lib/libz.so
+lib/libnodes.so: /usr/lib/libvtkRenderingAnnotation.so.1
+lib/libnodes.so: /usr/lib/libvtkImagingColor.so.1
+lib/libnodes.so: /usr/lib/libvtkRenderingVolume.so.1
+lib/libnodes.so: /usr/lib/libvtkIOXML.so.1
+lib/libnodes.so: /usr/lib/libvtkIOXMLParser.so.1
+lib/libnodes.so: /usr/lib/libvtkIOCore.so.1
+lib/libnodes.so: /usr/lib/libvtkRenderingContext2D.so.1
+lib/libnodes.so: /usr/lib/libQt5Widgets.so.5.15.1
+lib/libnodes.so: /usr/lib/libQt5Gui.so.5.15.1
+lib/libnodes.so: /usr/lib/libQt5Core.so.5.15.1
+lib/libnodes.so: /usr/lib/libvtkInteractionStyle.so.1
+lib/libnodes.so: /usr/lib/libvtkFiltersExtraction.so.1
+lib/libnodes.so: /usr/lib/libvtkFiltersStatistics.so.1
+lib/libnodes.so: /usr/lib/libvtkImagingFourier.so.1
+lib/libnodes.so: /usr/lib/libvtkImagingCore.so.1
+lib/libnodes.so: /usr/lib/libvtkRenderingOpenGL2.so.1
+lib/libnodes.so: /usr/lib/libSM.so
+lib/libnodes.so: /usr/lib/libICE.so
+lib/libnodes.so: /usr/lib/libX11.so
+lib/libnodes.so: /usr/lib/libXext.so
+lib/libnodes.so: /usr/lib/libXt.so
+lib/libnodes.so: /usr/lib/libvtkRenderingFreeType.so.1
+lib/libnodes.so: /usr/lib/libvtkRenderingCore.so.1
+lib/libnodes.so: /usr/lib/libvtkCommonColor.so.1
+lib/libnodes.so: /usr/lib/libvtkFiltersGeometry.so.1
+lib/libnodes.so: /usr/lib/libvtkFiltersSources.so.1
+lib/libnodes.so: /usr/lib/libvtkFiltersGeneral.so.1
+lib/libnodes.so: /usr/lib/libvtkCommonComputationalGeometry.so.1
+lib/libnodes.so: /usr/lib/libvtkFiltersCore.so.1
+lib/libnodes.so: /usr/lib/libvtkCommonExecutionModel.so.1
+lib/libnodes.so: /usr/lib/libvtkCommonDataModel.so.1
+lib/libnodes.so: /usr/lib/libvtkCommonTransforms.so.1
+lib/libnodes.so: /usr/lib/libvtkCommonMisc.so.1
+lib/libnodes.so: /usr/lib/libvtkCommonMath.so.1
+lib/libnodes.so: /usr/lib/libvtkCommonSystem.so.1
+lib/libnodes.so: /usr/lib/libvtkCommonCore.so.1
+lib/libnodes.so: /usr/lib/libvtksys.so.1
+lib/libnodes.so: /usr/lib/libfreetype.so
 lib/libnodes.so: CMakeFiles/nodes.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ottersome/Projects/ITRI/nodeeditor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Linking CXX shared library lib/libnodes.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nodes.dir/link.txt --verbose=$(VERBOSE)
