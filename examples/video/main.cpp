@@ -5,7 +5,7 @@
 
 #include "ImageShowModel.hpp"
 #include "RSColorImageLoaderModel.hpp"
-#include "RSCameraManager.h"
+//#include "RSCameraManager.h"
 
 using QtNodes::DataModelRegistry;
 using QtNodes::FlowScene;
@@ -27,7 +27,7 @@ int
 main(int argc, char *argv[])
 {
   QApplication app(argc, argv);
-  CameraManager::initializeManager();
+ // CameraManager::initializeManager();
 
   FlowScene scene(registerDataModels());
 

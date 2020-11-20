@@ -41,8 +41,7 @@ RSColorImageLoaderModel()
 void RSColorImageLoaderModel::startRSPipeline(){}
 
 unsigned int
-RSColorImageLoaderModel::
-nPorts(PortType portType) const
+RSColorImageLoaderModel::nPorts(PortType portType) const
 {
   unsigned int result = 1;
 
@@ -62,7 +61,6 @@ nPorts(PortType portType) const
 
   return result;
 }
-
 
 bool
 RSColorImageLoaderModel::
@@ -116,35 +114,64 @@ void RSColorImageLoaderModel::changeCamera(int index){
     _curIndex = index;
     QVariant data = _cbCameraList->itemData(_curIndex);
     printf("Using index : %d and serial:%s\n",_curIndex,data.toString().toStdString().c_str());
-    _camman->setSerialNo(data.toString().toStdString());
+    //_camman->setSerialNo(data.toString().toStdString());
 };
 void RSColorImageLoaderModel::refreshList(bool initializeManager){
     //Now we poll from our camera manager this available devices
+    std::cout << "Refreshing List\n"<<std::endl;
     _cbCameraList->clear();
-    if(CameraManager::getDeviceList().size() >0 ){
+    if(true/*CameraManager::getDeviceList().size() >0 */){
         _cbCameraList->setDisabled(false);
 
         int counter = 0;
         std::string serial;
-        for(auto&& dev :  CameraManager::getDeviceList()){
+        //for(auto&& dev :  CameraManager::getDeviceList()){
             if(counter == 0 && initializeManager){
-                _camman = new CameraManager(serial,640,480,640,480,30);
-                connect(_camman, &CameraManager::framesReady, this, &RSColorImageLoaderModel::receiveFrame);
-                _camman->start();
+                std::string emptystring = "";
+                printf("We want to try with serial %s\n",serial.c_str());
+                if(rs_man.initialize(emptystring,emptystring)){
+                    std::cout << "Lance Camera connected successfully!"
+                        <<std::endl;
+                   //Ill do everything here since its what we need 
+                }else 
+                    std::cout << "Lance Camera could not connect!"
+                        <<std::endl;
+
+                //_camman = new CameraManager(serial,640,480,640,480,30);
+
+                //connect(_camman, &CameraManager::framesReady, this, &RSColorImageLoaderModel::receiveFrame);
+                //_camman->start();
                 _curIndex = 0;
-                
             }
-            serial = dev.get_info(RS2_CAMERA_INFO_SERIAL_NUMBER);
-            printf("This is a camera : %s\n",dev.get_info(RS2_CAMERA_INFO_NAME));
-            _cbCameraList->addItem(dev.get_info(RS2_CAMERA_INFO_NAME), QVariant(dev.get_info(RS2_CAMERA_INFO_SERIAL_NUMBER)));
-            _cbCameraList->setCurrentIndex(_curIndex);
+            //serial = dev.get_info(RS2_CAMERA_INFO_SERIAL_NUMBER);
+            //printf("This is a camera : %s\n",dev.get_info(RS2_CAMERA_INFO_NAME));
+            //_cbCameraList->addItem(dev.get_info(RS2_CAMERA_INFO_NAME), QVariant(dev.get_info(RS2_CAMERA_INFO_SERIAL_NUMBER)));
+            //_cbCameraList->setCurrentIndex(_curIndex);
             //Set serial here
-        }
+        //}
     }else{
         _cbCameraList->setDisabled(true);
         _cbCameraList->addItem(NOCAM);
     }
 }
 void RSColorImageLoaderModel::refreshSlot(bool checked){
-    refreshList(false);
+    //refreshList(false);
+    printf("Refreshing list\n");
+    cv::Mat ground_truth,color_img,depth_img,infrared_img;
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr layers;
+    rs_man.run(color_img,depth_img,infrared_img,layers);
+    printf("Ran\n");
+
+    //By know we should have a color frame ready
+    rs2::frame colFrame = rs_man.returnColorFrame();
+    if(colFrame)
+        printf("We got the color frame\n");
+    else
+        printf("Col frame seems iffy\n");
+    auto q_rgb = rs_man.rsFrameToQImage(colFrame);
+    printf("changed it to qimage\n");
+
+    _pixmap = QPixmap::fromImage(q_rgb);
+    printf("Set the pixmap\n");
+    Q_EMIT dataUpdated(0);
 }

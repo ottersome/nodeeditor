@@ -13,7 +13,8 @@
 
 #include <librealsense2/rs.hpp>
 #include <qcombobox.h>
-#include "RSCameraManager.h"
+//#include "RSCameraManager.h"
+#include "realsense.h"
 
 //Not sure if we need this quite yet
 //Theres a dependency issue or smth like that here
@@ -48,14 +49,14 @@ public:
   QString
   name() const override { return QString("RSColorImageLoaderModel"); }
 
+
 public:
 
   virtual QString
   modelName() const
   { return QString("Source Image"); }
 
-  unsigned int
-  nPorts(PortType portType) const override;
+  unsigned int nPorts(PortType portType) const;
 
   NodeDataType
   dataType(PortType portType, PortIndex portIndex) const override;
@@ -94,7 +95,11 @@ private:
 
   QPixmap _pixmap;
 
-  CameraManager * _camman = NULL;
+  //My Cameramanager
+  //CameraManager * _camman = NULL;
+
+  //Lance's Class
+  RealSense rs_man;
 
 private:
   //Helper functions
