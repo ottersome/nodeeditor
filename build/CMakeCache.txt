@@ -82,7 +82,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+CMAKE_CXX_COMPILER:STRING=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -334,7 +334,7 @@ PCL_COMMON_LIBRARY:FILEPATH=/usr/lib/libpcl_common.so
 PCL_COMMON_LIBRARY_DEBUG:FILEPATH=/usr/lib/libpcl_common.so
 
 //The directory containing a CMake configuration file for PCL.
-PCL_DIR:PATH=/usr/share/pcl-1.10
+PCL_DIR:PATH=/usr/share/pcl-1.11
 
 //path to features headers
 PCL_FEATURES_INCLUDE_DIR:PATH=/usr/include/pcl-1.10
@@ -611,9 +611,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/ottersome/Projects/ITRI/nodeeditor/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=18
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=19
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=4
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -732,7 +732,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.18
+CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.19
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -774,7 +774,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_FLANN:INTERNAL=[/usr/lib/libflann_cpp.so][/usr/incl
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.5.0()]
 //Details about finding PCL
-FIND_PACKAGE_MESSAGE_DETAILS_PCL:INTERNAL=[pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_outofcore;pcl_people;/usr/lib/libboost_system.so;/usr/lib/libboost_filesystem.so;/usr/lib/libboost_date_time.so;/usr/lib/libboost_iostreams.so;/usr/lib/libboost_serialization.so;/usr/lib/libboost_regex.so;optimized;/usr/lib/libqhull.so;debug;/usr/lib/libqhull.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/libfreetype.so;/usr/lib/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/libjpeg.so;/usr/lib/libpng.so;/usr/lib/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;/usr/lib/libdouble-conversion.so;/usr/lib/liblz4.so;/usr/lib/liblzma.so;vtkIOXMLParser;/usr/lib/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;/usr/lib/libGLEW.so;vtkRenderingQt;vtkFiltersTexture;vtkGUISupportQt;vtkRenderingLabel;FLANN::FLANN][/usr/include/pcl-1.10;/usr/include/eigen3;/usr/include;/usr/include/vtk;/usr/include/freetype2;/usr/include/double-conversion][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_PCL:INTERNAL=[pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_outofcore;pcl_people;/usr/lib/libboost_system.so;/usr/lib/libboost_filesystem.so;/usr/lib/libboost_date_time.so;/usr/lib/libboost_iostreams.so;/usr/lib/libboost_serialization.so;/usr/lib/libboost_regex.so;optimized;/usr/lib/libqhull.so;debug;/usr/lib/libqhull.so;vtkChartsCore;vtkCommonColor;vtkCommonCore;vtksys;vtkCommonDataModel;vtkCommonMath;vtkCommonMisc;vtkCommonSystem;vtkCommonTransforms;vtkCommonExecutionModel;vtkFiltersGeneral;vtkCommonComputationalGeometry;vtkFiltersCore;vtkInfovisCore;vtkFiltersExtraction;vtkFiltersStatistics;vtkImagingFourier;vtkImagingCore;vtkRenderingContext2D;vtkRenderingCore;vtkFiltersGeometry;vtkFiltersSources;vtkRenderingFreeType;/usr/lib/libfreetype.so;/usr/lib/libz.so;vtkFiltersModeling;vtkImagingSources;vtkInteractionStyle;vtkInteractionWidgets;vtkFiltersHybrid;vtkImagingColor;vtkImagingGeneral;vtkImagingHybrid;vtkIOImage;vtkDICOMParser;vtkmetaio;/usr/lib/libjpeg.so;/usr/lib/libpng.so;/usr/lib/libtiff.so;vtkRenderingAnnotation;vtkRenderingVolume;vtkIOXML;vtkIOCore;/usr/lib/libdouble-conversion.so;/usr/lib/liblz4.so;/usr/lib/liblzma.so;vtkIOXMLParser;/usr/lib/libexpat.so;vtkIOGeometry;vtkIOLegacy;vtkIOPLY;vtkRenderingLOD;vtkViewsContext2D;vtkViewsCore;vtkRenderingContextOpenGL2;vtkRenderingOpenGL2;/usr/lib/libGLEW.so;vtkRenderingQt;vtkFiltersTexture;vtkGUISupportQt;vtkRenderingLabel;FLANN::FLANN][/usr/include/pcl-1.11;/usr/include/eigen3;/usr/include;/usr/include/vtk;/usr/include/freetype2;/usr/include/double-conversion][v()]
 //Details about finding PCL_2D
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_2D:INTERNAL=[/usr/include/pcl-1.10][v()]
 //Details about finding PCL_COMMON

@@ -36,7 +36,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/freetype2"
   "/usr/include/double-conversion"
   "/usr/include/opencv4"
-  "/usr/include/pcl-1.10"
+  "/usr/include/pcl-1.11"
   "/usr/include/qt"
   "/usr/include/qt/QtCore"
   "/usr/lib/qt/mkspecs/linux-g++"

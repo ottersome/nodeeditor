@@ -3,6 +3,8 @@
 #include <rs_advanced_mode.hpp>
 #define RECORD
 
+const rs2::context RealSense::ctx;
+
 // Constructor
 RealSense::RealSense()
 {

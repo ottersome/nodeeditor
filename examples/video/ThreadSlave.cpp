@@ -3,9 +3,7 @@
 ThreadSlave::ThreadSlave(RealSense* rs,QPixmap* pixmap):
     rs_man(rs),
     pmToUpdate(pixmap){
-        printf("Iinitialized Slave\n");
     }
-
 void ThreadSlave::doWork(){
     printf("Slave is working now...\n");
     while(true){
